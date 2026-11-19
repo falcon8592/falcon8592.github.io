@@ -1,0 +1,2175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>秘密基地导航发布_官方视频门户 - 原创影像与创作者社区</title>
+<meta name="description" content="秘密基地导航发布官方网站，专注原创视频内容生态与创作者社区建设，深耕影像记录、生活方式与城市探索垂直领域，为用户提供高品质正版内容与持续运营的品牌服务。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2540'/%3E%3Cpath d='M24 20l20 12-20 12z' fill='%23ff8a4c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --sb-nav-bg:#141a2b;
+  --sb-nav-bg-2:#1c2540;
+  --sb-accent:#ff8a4c;
+  --sb-accent-2:#ffd166;
+  --sb-blue:#4f8cff;
+  --sb-text:#1c2333;
+  --sb-muted:#5c667e;
+  --sb-line:#e3e7f0;
+  --sb-bg:#f6f8fc;
+  --sb-card:#ffffff;
+  --sb-radius:16px;
+  --sb-shadow:0 10px 30px rgba(20,26,43,.08);
+  --sb-shadow-hover:0 18px 44px rgba(20,26,43,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:132px;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--sb-text);
+  background:var(--sb-bg);
+  line-height:1.7;
+  font-size:16px;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;max-width:100%;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+ul{list-style:none;}
+.sb-container{width:min(1180px,92%);margin:0 auto;}
+
+/* ============ 公告条 + 页头 吸顶 ============ */
+.sb-sticky-wrap{position:sticky;top:0;z-index:900;}
+.sb-notice-bar{
+  background:linear-gradient(90deg,#1c2540,#2b3560 55%,#1c2540);
+  color:#e8ecf7;
+  font-size:13.5px;
+  letter-spacing:.2px;
+}
+.sb-notice-inner{
+  display:flex;align-items:center;gap:12px;
+  padding:9px 0;flex-wrap:wrap;
+}
+.sb-notice-tag{
+  flex:0 0 auto;
+  background:var(--sb-accent);
+  color:#1c1408;
+  font-weight:700;
+  font-size:12px;
+  padding:2px 9px;
+  border-radius:999px;
+}
+.sb-notice-text{flex:1 1 320px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.sb-notice-text b{color:var(--sb-accent-2);font-weight:600;}
+.sb-notice-link{
+  flex:0 0 auto;font-size:12.5px;color:#bfc9e4;
+  border-bottom:1px dashed rgba(191,201,228,.5);
+  padding-bottom:1px;transition:color .2s;
+}
+.sb-notice-link:hover{color:var(--sb-accent-2);}
+
+.sb-site-header{
+  background:rgba(20,26,43,.96);
+  backdrop-filter:blur(10px);
+  color:#eef1fa;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.sb-header-main{
+  display:flex;align-items:center;gap:24px;
+  padding:12px 0;
+}
+.sb-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.sb-brand-logo{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(140deg,#ff8a4c,#ffd166);
+  display:grid;place-items:center;
+  box-shadow:0 6px 18px rgba(255,138,76,.35);
+}
+.sb-brand-logo svg{width:22px;height:22px;}
+.sb-brand-name{font-size:19px;font-weight:800;letter-spacing:.5px;line-height:1.25;}
+.sb-brand-name small{display:block;font-size:10.5px;font-weight:400;color:#93a0c0;letter-spacing:2px;}
+.sb-nav{display:flex;align-items:center;gap:4px;flex:1 1 auto;flex-wrap:wrap;}
+.sb-nav a{
+  position:relative;
+  font-size:14.5px;color:#c3cce3;
+  padding:8px 12px;border-radius:9px;
+  transition:background .2s,color .2s;
+  white-space:nowrap;
+}
+.sb-nav a:hover,.sb-nav a.is-active{background:rgba(255,255,255,.08);color:#fff;}
+.sb-nav a.is-active::after{
+  content:"";position:absolute;left:12px;right:12px;bottom:2px;height:2px;
+  border-radius:2px;background:var(--sb-accent);
+}
+.sb-header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.sb-search-wrap{position:relative;}
+.sb-search-input{
+  width:206px;height:38px;border-radius:10px;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.07);
+  color:#fff;padding:0 38px 0 14px;font-size:13.5px;outline:none;
+  transition:width .25s,border-color .2s,background .2s;
+}
+.sb-search-input::placeholder{color:#8c99b8;}
+.sb-search-input:focus{width:250px;border-color:var(--sb-accent);background:rgba(255,255,255,.11);}
+.sb-search-btn{
+  position:absolute;right:4px;top:4px;
+  width:30px;height:30px;border-radius:8px;
+  display:grid;place-items:center;color:#c3cce3;
+  transition:color .2s,background .2s;
+}
+.sb-search-btn:hover{color:var(--sb-accent-2);background:rgba(255,255,255,.1);}
+.sb-search-tip{
+  position:absolute;top:46px;right:0;width:270px;
+  background:#fff;color:var(--sb-text);
+  border-radius:12px;box-shadow:var(--sb-shadow-hover);
+  padding:10px 14px;font-size:13px;line-height:1.6;
+  display:none;z-index:60;
+}
+.sb-search-tip.show{display:block;}
+.sb-search-tip strong{color:var(--sb-accent);}
+.sb-btn-upload{
+  background:linear-gradient(135deg,var(--sb-accent),#ff6b3d);
+  color:#20130a;font-weight:700;font-size:13.5px;
+  padding:9px 18px;border-radius:10px;
+  box-shadow:0 6px 18px rgba(255,138,76,.3);
+  transition:transform .2s,box-shadow .2s;
+  white-space:nowrap;
+}
+.sb-btn-upload:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,138,76,.45);}
+.sb-menu-toggle{
+  display:none;width:42px;height:42px;border-radius:10px;
+  background:rgba(255,255,255,.08);color:#fff;
+  place-items:center;
+}
+
+/* ============ 首屏 ============ */
+.sb-hero{
+  background:
+    radial-gradient(900px 420px at 88% -10%,rgba(79,140,255,.22),transparent 65%),
+    radial-gradient(700px 380px at 6% 108%,rgba(255,138,76,.18),transparent 62%),
+    linear-gradient(160deg,#141a2b 0%,#1c2540 52%,#232e52 100%);
+  color:#eef1fa;
+  padding:56px 0 64px;
+  position:relative;overflow:hidden;
+}
+.sb-hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:56px 56px;
+  pointer-events:none;
+}
+.sb-hero-grid{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+}
+.sb-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,138,76,.14);
+  border:1px solid rgba(255,138,76,.42);
+  color:#ffc7a5;font-size:13px;font-weight:600;
+  padding:6px 14px;border-radius:999px;margin-bottom:20px;
+}
+.sb-hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--sb-accent);box-shadow:0 0 0 4px rgba(255,138,76,.18);}
+.sb-hero h1{
+  font-size:clamp(34px,4.6vw,54px);
+  line-height:1.15;font-weight:900;letter-spacing:1px;
+  margin-bottom:16px;
+}
+.sb-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,#ffd166,#ff8a4c);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.sb-hero-slogan{
+  font-size:17px;color:#c3cce3;margin-bottom:22px;letter-spacing:.4px;
+}
+.sb-hero-desc{
+  font-size:14.8px;color:#aeb9d4;line-height:1.9;margin-bottom:28px;
+  max-width:560px;
+}
+.sb-hero-stats{
+  display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;
+}
+.sb-stat{
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:14px;padding:12px 20px;min-width:132px;
+  transition:transform .25s,border-color .25s;
+}
+.sb-stat:hover{transform:translateY(-3px);border-color:rgba(255,138,76,.5);}
+.sb-stat-num{font-size:24px;font-weight:800;color:#fff;letter-spacing:.5px;}
+.sb-stat-num small{font-size:13px;color:var(--sb-accent-2);margin-left:2px;font-weight:600;}
+.sb-stat-label{font-size:12.5px;color:#93a0c0;margin-top:2px;}
+.sb-hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.sb-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 26px;border-radius:12px;font-size:15px;font-weight:700;
+  transition:transform .2s,box-shadow .2s,background .2s;
+}
+.sb-btn-primary{
+  background:linear-gradient(135deg,var(--sb-accent),#ff6b3d);
+  color:#20130a;box-shadow:0 10px 26px rgba(255,138,76,.32);
+}
+.sb-btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(255,138,76,.46);}
+.sb-btn-ghost{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.2);
+  color:#eef1fa;
+}
+.sb-btn-ghost:hover{background:rgba(255,255,255,.14);transform:translateY(-2px);}
+
+.sb-hero-visual{position:relative;}
+.sb-hero-cover{
+  border-radius:20px;overflow:hidden;
+  box-shadow:0 30px 70px rgba(0,0,0,.45);
+  border:1px solid rgba(255,255,255,.12);
+  position:relative;
+}
+.sb-hero-cover svg{width:100%;height:auto;}
+.sb-hero-cover-tag{
+  position:absolute;left:14px;top:14px;
+  background:rgba(20,26,43,.72);backdrop-filter:blur(6px);
+  color:#fff;font-size:12px;padding:5px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.18);
+}
+.sb-hero-float{
+  position:absolute;right:-16px;bottom:-18px;
+  background:#fff;color:var(--sb-text);
+  border-radius:14px;padding:12px 18px;
+  box-shadow:0 18px 40px rgba(0,0,0,.3);
+  display:flex;align-items:center;gap:12px;
+}
+.sb-hero-float .ico{
+  width:38px;height:38px;border-radius:10px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#e8f0ff,#d7e5ff);color:var(--sb-blue);
+}
+.sb-hero-float b{display:block;font-size:14px;}
+.sb-hero-float span{font-size:12px;color:var(--sb-muted);}
+
+/* ============ 通用 section ============ */
+.sb-section{padding:64px 0;}
+.sb-section-alt{background:#fff;}
+.sb-section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
+  margin-bottom:34px;flex-wrap:wrap;
+}
+.sb-section-eyed{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:12.5px;font-weight:700;letter-spacing:2px;color:var(--sb-accent);
+  text-transform:uppercase;margin-bottom:8px;
+}
+.sb-section-eyed::before{content:"";width:18px;height:3px;border-radius:2px;background:var(--sb-accent);}
+.sb-section-head h2{
+  font-size:clamp(23px,2.8vw,31px);font-weight:900;letter-spacing:.5px;line-height:1.25;
+}
+.sb-section-sub{font-size:14px;color:var(--sb-muted);margin-top:8px;max-width:640px;}
+.sb-link-more{
+  font-size:14px;font-weight:700;color:var(--sb-blue);
+  display:inline-flex;align-items:center;gap:5px;white-space:nowrap;
+  transition:gap .2s;
+}
+.sb-link-more:hover{gap:10px;}
+
+/* ============ 品牌解析长文 ============ */
+.sb-about{background:#fff;border-top:1px solid var(--sb-line);}
+.sb-about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start;}
+.sb-about-aside{
+  position:sticky;top:150px;
+  background:linear-gradient(165deg,#141a2b,#232e52);
+  color:#eef1fa;border-radius:20px;padding:28px 26px;
+  box-shadow:var(--sb-shadow);
+}
+.sb-about-aside h3{font-size:19px;font-weight:800;margin-bottom:14px;letter-spacing:.5px;}
+.sb-about-aside p{font-size:13.8px;color:#aeb9d4;line-height:1.85;margin-bottom:18px;}
+.sb-about-keywords{display:flex;flex-wrap:wrap;gap:8px;}
+.sb-about-keywords span{
+  font-size:12px;padding:5px 11px;border-radius:999px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+  color:#cdd6ea;
+}
+.sb-about-body h2{font-size:26px;font-weight:900;margin-bottom:16px;line-height:1.3;}
+.sb-about-body h4{
+  font-size:16.5px;font-weight:800;margin:24px 0 10px;
+  padding-left:12px;border-left:4px solid var(--sb-accent);
+  line-height:1.4;
+}
+.sb-about-body p{font-size:14.8px;color:#3c4459;line-height:2;margin-bottom:12px;text-align:justify;}
+.sb-about-body p strong{color:var(--sb-text);}
+
+/* ============ 焦点视频 ============ */
+.sb-focus-grid{
+  display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:20px;
+}
+.sb-video-card{
+  background:var(--sb-card);border-radius:var(--sb-radius);
+  overflow:hidden;box-shadow:var(--sb-shadow);
+  transition:transform .28s,box-shadow .28s;
+  display:flex;flex-direction:column;
+}
+.sb-video-card:hover{transform:translateY(-6px);box-shadow:var(--sb-shadow-hover);}
+.sb-video-cover{position:relative;overflow:hidden;aspect-ratio:16/9;background:#1c2540;}
+.sb-video-cover svg{width:100%;height:100%;object-fit:cover;transition:transform .45s;}
+.sb-video-card:hover .sb-video-cover svg{transform:scale(1.06);}
+.sb-video-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,rgba(20,26,43,0) 40%,rgba(20,26,43,.55));
+  opacity:0;transition:opacity .28s;
+}
+.sb-video-card:hover .sb-video-play{opacity:1;}
+.sb-video-play span{
+  width:54px;height:54px;border-radius:50%;
+  background:rgba(255,255,255,.92);color:#141a2b;
+  display:grid;place-items:center;
+  box-shadow:0 8px 24px rgba(0,0,0,.3);
+}
+.sb-video-play span svg{width:22px;height:22px;margin-left:3px;}
+.sb-video-badge{
+  position:absolute;left:11px;top:11px;
+  background:rgba(20,26,43,.76);color:#fff;
+  font-size:11.5px;padding:4px 10px;border-radius:7px;
+  backdrop-filter:blur(4px);
+}
+.sb-video-dur{
+  position:absolute;right:11px;bottom:11px;
+  background:rgba(20,26,43,.8);color:#fff;
+  font-size:11.5px;padding:3px 8px;border-radius:6px;
+}
+.sb-video-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1 1 auto;}
+.sb-video-title{font-size:15.6px;font-weight:800;line-height:1.5;margin-bottom:8px;}
+.sb-video-title:hover{color:var(--sb-accent);}
+.sb-video-sum{
+  font-size:13px;color:var(--sb-muted);line-height:1.75;
+  margin-bottom:12px;flex:1 1 auto;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.sb-video-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:13px;}
+.sb-video-tags span{
+  font-size:11.5px;color:#4a5670;background:#eef1f8;
+  padding:3px 9px;border-radius:6px;
+}
+.sb-video-meta{
+  display:flex;align-items:center;gap:10px;
+  padding-top:12px;border-top:1px dashed var(--sb-line);
+}
+.sb-avatar{
+  width:30px;height:30px;border-radius:50%;flex:0 0 auto;
+  display:grid;place-items:center;font-size:13px;font-weight:800;color:#fff;
+}
+.sb-video-meta-info{flex:1 1 auto;min-width:0;}
+.sb-video-meta-info b{display:block;font-size:12.8px;font-weight:700;}
+.sb-video-meta-info small{font-size:11.5px;color:var(--sb-muted);}
+.sb-video-ops{display:flex;gap:4px;flex:0 0 auto;}
+.sb-op-btn{
+  width:30px;height:30px;border-radius:8px;
+  display:grid;place-items:center;color:#8b96ad;
+  transition:color .2s,background .2s;
+}
+.sb-op-btn:hover{background:#f0f3fa;color:var(--sb-accent);}
+.sb-op-btn.is-liked{color:#e8484b;background:#fdeeee;}
+.sb-op-btn.is-saved{color:var(--sb-accent);background:#fff1e8;}
+.sb-op-btn svg{width:16px;height:16px;}
+
+/* 焦点大卡 */
+.sb-video-card.is-feature{grid-row:span 2;}
+.sb-video-card.is-feature .sb-video-cover{aspect-ratio:16/10;}
+.sb-video-card.is-feature .sb-video-title{font-size:19px;}
+.sb-video-card.is-feature .sb-video-sum{-webkit-line-clamp:3;font-size:13.6px;}
+
+/* ============ 视频流 网格 ============ */
+.sb-stream-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+
+/* ============ 专题 ============ */
+.sb-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.sb-topic-card{
+  border-radius:var(--sb-radius);overflow:hidden;position:relative;
+  min-height:220px;display:flex;flex-direction:column;justify-content:flex-end;
+  color:#fff;box-shadow:var(--sb-shadow);
+  transition:transform .28s,box-shadow .28s;
+  isolation:isolate;
+}
+.sb-topic-card:hover{transform:translateY(-6px);box-shadow:var(--sb-shadow-hover);}
+.sb-topic-card svg{position:absolute;inset:0;width:100%;height:100%;z-index:-2;transition:transform .5s;}
+.sb-topic-card:hover svg{transform:scale(1.07);}
+.sb-topic-card::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,26,43,0) 20%,rgba(20,26,43,.86));
+}
+.sb-topic-body{padding:20px;}
+.sb-topic-status{
+  display:inline-block;font-size:11.5px;font-weight:700;
+  background:rgba(255,138,76,.92);color:#20130a;
+  padding:3px 10px;border-radius:6px;margin-bottom:9px;
+}
+.sb-topic-body h3{font-size:17px;font-weight:800;line-height:1.4;margin-bottom:7px;}
+.sb-topic-body p{font-size:12.8px;color:#d3daea;line-height:1.7;}
+
+/* ============ 创作者矩阵 ============ */
+.sb-creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.sb-creator-card{
+  background:#fff;border-radius:var(--sb-radius);
+  padding:22px;box-shadow:var(--sb-shadow);
+  transition:transform .28s,box-shadow .28s;
+  border:1px solid transparent;
+}
+.sb-creator-card:hover{transform:translateY(-5px);box-shadow:var(--sb-shadow-hover);border-color:#ffe0cc;}
+.sb-creator-top{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+.sb-creator-avatar{
+  width:56px;height:56px;border-radius:16px;flex:0 0 auto;
+  display:grid;place-items:center;font-size:21px;font-weight:800;color:#fff;
+  box-shadow:0 8px 20px rgba(20,26,43,.14);
+}
+.sb-creator-name{font-size:16.5px;font-weight:800;line-height:1.3;}
+.sb-creator-field{font-size:12.5px;color:var(--sb-accent);font-weight:600;margin-top:2px;}
+.sb-creator-desc{font-size:13.4px;color:var(--sb-muted);line-height:1.8;margin-bottom:16px;min-height:72px;}
+.sb-creator-stats{display:flex;gap:20px;padding-top:14px;border-top:1px dashed var(--sb-line);}
+.sb-creator-stats div b{display:block;font-size:16px;font-weight:800;color:var(--sb-text);}
+.sb-creator-stats div span{font-size:11.8px;color:var(--sb-muted);}
+.sb-creator-more{
+  margin-left:auto;align-self:center;
+  font-size:13px;font-weight:700;color:var(--sb-blue);
+  padding:7px 14px;border-radius:9px;background:#eef3ff;
+  transition:background .2s,color .2s;
+}
+.sb-creator-more:hover{background:var(--sb-blue);color:#fff;}
+
+/* ============ 排行榜 ============ */
+.sb-rank-wrap{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+}
+.sb-rank-col{
+  background:#fff;border-radius:var(--sb-radius);
+  padding:22px;box-shadow:var(--sb-shadow);
+}
+.sb-rank-col h3{
+  font-size:15.5px;font-weight:800;margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.sb-rank-col h3 .tag{
+  font-size:11px;padding:2px 8px;border-radius:6px;font-weight:700;
+}
+.sb-rank-col:nth-child(1) h3 .tag{background:#fff0e6;color:#d96a22;}
+.sb-rank-col:nth-child(2) h3 .tag{background:#e9f2ff;color:#2f6fd0;}
+.sb-rank-col:nth-child(3) h3 .tag{background:#e9f9ef;color:#1f8f56;}
+.sb-rank-item{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 0;border-bottom:1px dashed var(--sb-line);
+}
+.sb-rank-item:last-child{border-bottom:none;}
+.sb-rank-num{
+  width:24px;height:24px;border-radius:7px;flex:0 0 auto;
+  display:grid;place-items:center;font-size:12px;font-weight:800;
+  background:#eef1f8;color:#6b7793;
+}
+.sb-rank-item:nth-child(2) .sb-rank-num{background:#ffd166;color:#5c3d00;}
+.sb-rank-item:nth-child(3) .sb-rank-num{background:#ffb08a;color:#5c2200;}
+.sb-rank-item:nth-child(4) .sb-rank-num{background:#d9e2f2;color:#3a4a64;}
+.sb-rank-title{font-size:13.6px;font-weight:600;flex:1 1 auto;line-height:1.5;}
+.sb-rank-hot{font-size:12px;color:var(--sb-accent);font-weight:700;flex:0 0 auto;}
+
+/* ============ 评论 ============ */
+.sb-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.sb-review-card{
+  background:#fff;border-radius:var(--sb-radius);
+  padding:22px;box-shadow:var(--sb-shadow);
+  position:relative;
+  transition:transform .26s,box-shadow .26s;
+}
+.sb-review-card:hover{transform:translateY(-4px);box-shadow:var(--sb-shadow-hover);}
+.sb-review-card::before{
+  content:"“";position:absolute;right:20px;top:8px;
+  font-size:56px;font-family:Georgia,serif;color:#eef1f8;line-height:1;
+}
+.sb-review-text{font-size:13.8px;color:#3c4459;line-height:1.9;margin-bottom:16px;position:relative;z-index:1;}
+.sb-review-user{display:flex;align-items:center;gap:10px;}
+.sb-review-user .sb-avatar{width:34px;height:34px;border-radius:11px;font-size:13px;}
+.sb-review-user b{font-size:13.4px;display:block;}
+.sb-review-user span{font-size:11.8px;color:var(--sb-muted);}
+.sb-stars{margin-left:auto;color:#ffb020;font-size:12px;letter-spacing:1px;}
+
+/* ============ 灵感/工具 ============ */
+.sb-inspire{
+  background:linear-gradient(150deg,#141a2b,#232e52 60%,#2b3560);
+  color:#eef1fa;border-radius:22px;
+  padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:38px;
+  box-shadow:var(--sb-shadow);
+}
+.sb-inspire h3{font-size:22px;font-weight:900;margin-bottom:12px;line-height:1.3;}
+.sb-inspire p{font-size:14px;color:#aeb9d4;line-height:1.9;margin-bottom:20px;}
+.sb-inspire-tags{display:flex;flex-wrap:wrap;gap:9px;}
+.sb-inspire-tags button{
+  font-size:13px;color:#dbe3f5;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+  padding:7px 14px;border-radius:9px;transition:all .2s;
+}
+.sb-inspire-tags button:hover,.sb-inspire-tags button.is-on{background:var(--sb-accent);border-color:var(--sb-accent);color:#20130a;font-weight:700;}
+.sb-inspire-output{
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:14px;padding:18px 20px;
+}
+.sb-inspire-output h4{font-size:13px;font-weight:700;color:var(--sb-accent-2);letter-spacing:1px;margin-bottom:9px;}
+.sb-inspire-output p{font-size:14px;color:#e4e9f6;line-height:1.85;margin:0;}
+.sb-inspire-output ul{display:flex;flex-direction:column;gap:7px;margin-top:6px;}
+.sb-inspire-output li{font-size:13.6px;color:#cdd6ea;line-height:1.7;padding-left:16px;position:relative;}
+.sb-inspire-output li::before{content:"▸";position:absolute;left:0;color:var(--sb-accent);}
+
+/* ============ 动态/更新 ============ */
+.sb-news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.sb-news-item{
+  background:#fff;border-radius:14px;padding:20px 22px;
+  box-shadow:var(--sb-shadow);display:flex;gap:16px;
+  transition:transform .25s,box-shadow .25s;
+}
+.sb-news-item:hover{transform:translateY(-3px);box-shadow:var(--sb-shadow-hover);}
+.sb-news-date{
+  flex:0 0 auto;text-align:center;
+  background:#eef3ff;border-radius:10px;padding:9px 12px;
+  align-self:flex-start;
+}
+.sb-news-date b{display:block;font-size:19px;font-weight:800;color:var(--sb-blue);line-height:1;}
+.sb-news-date span{font-size:11px;color:var(--sb-muted);}
+.sb-news-item h4{font-size:15px;font-weight:800;margin-bottom:6px;line-height:1.5;}
+.sb-news-item p{font-size:13.2px;color:var(--sb-muted);line-height:1.75;}
+
+/* ============ FAQ ============ */
+.sb-faq-wrap{max-width:900px;margin:0 auto;}
+.sb-faq-item{
+  background:#fff;border-radius:13px;margin-bottom:12px;
+  box-shadow:0 6px 18px rgba(20,26,43,.05);
+  overflow:hidden;border:1px solid #eaeef7;
+  transition:border-color .2s;
+}
+.sb-faq-item[open]{border-color:#ffd6c0;}
+.sb-faq-item summary{
+  list-style:none;cursor:pointer;
+  padding:17px 22px;font-size:15px;font-weight:700;
+  display:flex;align-items:center;gap:12px;
+  transition:color .2s;
+}
+.sb-faq-item summary::-webkit-details-marker{display:none;}
+.sb-faq-item summary::before{
+  content:"";width:20px;height:20px;border-radius:6px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--sb-accent),#ffd166);
+  transition:transform .25s;
+}
+.sb-faq-item[open] summary::before{transform:rotate(45deg);}
+.sb-faq-item summary:hover{color:var(--sb-accent);}
+.sb-faq-answer{
+  padding:0 22px 20px 54px;font-size:14px;color:var(--sb-muted);line-height:1.9;
+}
+
+/* ============ 合作品牌 ============ */
+.sb-partners{
+  display:grid;grid-template-columns:repeat(6,1fr);gap:14px;
+}
+.sb-partner{
+  background:#fff;border:1px solid var(--sb-line);border-radius:12px;
+  height:76px;display:grid;place-items:center;
+  font-size:13.5px;font-weight:800;color:#7a869e;
+  transition:all .25s;letter-spacing:.5px;
+}
+.sb-partner:hover{color:var(--sb-accent);border-color:#ffd6c0;transform:translateY(-3px);box-shadow:0 10px 22px rgba(255,138,76,.12);}
+
+/* ============ 联系 CTA ============ */
+.sb-cta{
+  text-align:center;
+  background:
+    radial-gradient(600px 240px at 50% 0%,rgba(255,138,76,.2),transparent 70%),
+    linear-gradient(160deg,#1c2540,#141a2b);
+  color:#eef1fa;border-radius:24px;padding:56px 32px;
+  box-shadow:var(--sb-shadow);
+}
+.sb-cta h2{font-size:clamp(23px,3vw,32px);font-weight:900;margin-bottom:12px;letter-spacing:.5px;}
+.sb-cta p{font-size:14.5px;color:#aeb9d4;max-width:600px;margin:0 auto 28px;line-height:1.9;}
+.sb-cta-form{
+  display:flex;gap:12px;max-width:520px;margin:0 auto 22px;flex-wrap:wrap;
+  justify-content:center;
+}
+.sb-cta-form input{
+  flex:1 1 250px;height:48px;border-radius:12px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.08);color:#fff;
+  padding:0 16px;font-size:14px;outline:none;
+  transition:border-color .2s;
+}
+.sb-cta-form input::placeholder{color:#8c99b8;}
+.sb-cta-form input:focus{border-color:var(--sb-accent);}
+.sb-cta-note{font-size:12.5px;color:#8c99b8;}
+
+/* ============ 页脚 ============ */
+.sb-footer{
+  background:#10152a;color:#a7b1c9;
+  padding:52px 0 26px;margin-top:8px;
+}
+.sb-footer-grid{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:36px;
+  padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.09);
+}
+.sb-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:15px;}
+.sb-footer-brand .sb-brand-logo{width:38px;height:38px;border-radius:11px;}
+.sb-footer-brand b{font-size:17px;color:#fff;font-weight:800;}
+.sb-footer-desc{font-size:13.2px;line-height:1.9;color:#8e9ab6;margin-bottom:16px;max-width:290px;}
+.sb-footer-slogan{font-size:12.5px;color:#6f7b98;letter-spacing:.5px;}
+.sb-footer-col h5{font-size:13.5px;color:#fff;font-weight:800;margin-bottom:14px;letter-spacing:.5px;}
+.sb-footer-col a,.sb-footer-col p{
+  display:block;font-size:13px;color:#8e9ab6;margin-bottom:9px;
+  transition:color .2s;line-height:1.6;
+}
+.sb-footer-col a:hover{color:var(--sb-accent-2);}
+.sb-footer-bottom{
+  padding-top:22px;display:flex;justify-content:space-between;gap:16px;
+  font-size:12.3px;color:#6f7b98;flex-wrap:wrap;
+}
+.sb-footer-bottom span{line-height:1.8;}
+
+/* ============ 回到顶部 ============ */
+.sb-to-top{
+  position:fixed;right:24px;bottom:28px;z-index:800;
+  width:46px;height:46px;border-radius:14px;
+  background:linear-gradient(135deg,var(--sb-accent),#ff6b3d);
+  color:#20130a;display:grid;place-items:center;
+  box-shadow:0 12px 28px rgba(255,138,76,.4);
+  opacity:0;visibility:hidden;transform:translateY(14px);
+  transition:all .28s;
+}
+.sb-to-top.show{opacity:1;visibility:visible;transform:translateY(0);}
+.sb-to-top:hover{transform:translateY(-3px);}
+
+/* ============ Toast / 弹窗 ============ */
+.sb-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:#141a2b;color:#fff;font-size:13.5px;
+  padding:12px 24px;border-radius:11px;
+  box-shadow:0 16px 40px rgba(0,0,0,.3);
+  opacity:0;visibility:hidden;transition:all .3s;z-index:1200;
+  border:1px solid rgba(255,138,76,.4);
+  max-width:90vw;text-align:center;
+}
+.sb-toast.show{opacity:1;visibility:visible;transform:translate(-50%,0);}
+.sb-modal-mask{
+  position:fixed;inset:0;background:rgba(16,21,42,.62);
+  backdrop-filter:blur(4px);z-index:1100;
+  display:grid;place-items:center;padding:24px;
+  opacity:0;visibility:hidden;transition:all .28s;
+}
+.sb-modal-mask.show{opacity:1;visibility:visible;}
+.sb-modal{
+  background:#fff;border-radius:20px;width:min(480px,100%);
+  padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.32);
+  transform:translateY(16px);transition:transform .28s;
+  max-height:86vh;overflow:auto;
+}
+.sb-modal-mask.show .sb-modal{transform:translateY(0);}
+.sb-modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px;}
+.sb-modal-head h3{font-size:19px;font-weight:900;line-height:1.35;}
+.sb-modal-close{
+  width:34px;height:34px;border-radius:9px;flex:0 0 auto;
+  display:grid;place-items:center;color:#8b96ad;background:#f2f5fb;
+  transition:all .2s;
+}
+.sb-modal-close:hover{background:#ffe4d5;color:var(--sb-accent);}
+.sb-modal p{font-size:14px;color:var(--sb-muted);line-height:1.9;margin-bottom:14px;}
+.sb-modal-form{display:flex;flex-direction:column;gap:12px;}
+.sb-modal-form input,.sb-modal-form textarea,.sb-modal-form select{
+  width:100%;border:1px solid var(--sb-line);border-radius:11px;
+  padding:12px 14px;font-size:14px;font-family:inherit;outline:none;
+  transition:border-color .2s;color:var(--sb-text);background:#fbfcfe;
+}
+.sb-modal-form textarea{resize:vertical;min-height:96px;}
+.sb-modal-form input:focus,.sb-modal-form textarea:focus,.sb-modal-form select:focus{border-color:var(--sb-accent);background:#fff;}
+.sb-modal-submit{
+  background:linear-gradient(135deg,var(--sb-accent),#ff6b3d);
+  color:#20130a;font-weight:800;font-size:14.5px;
+  padding:13px;border-radius:11px;margin-top:4px;
+  transition:transform .2s,box-shadow .2s;
+}
+.sb-modal-submit:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(255,138,76,.32);}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .sb-hero-grid{grid-template-columns:1fr;gap:38px;}
+  .sb-hero-visual{max-width:560px;}
+  .sb-focus-grid{grid-template-columns:1fr 1fr;}
+  .sb-video-card.is-feature{grid-row:auto;grid-column:span 2;}
+  .sb-stream-grid,.sb-topic-grid,.sb-creator-grid,.sb-review-grid,.sb-rank-wrap{grid-template-columns:repeat(2,1fr);}
+  .sb-about-grid{grid-template-columns:1fr;gap:30px;}
+  .sb-about-aside{position:static;}
+  .sb-inspire{grid-template-columns:1fr;gap:26px;padding:32px;}
+  .sb-partners{grid-template-columns:repeat(3,1fr);}
+  .sb-footer-grid{grid-template-columns:1fr 1fr;gap:28px;}
+}
+@media (max-width:860px){
+  html{scroll-padding-top:118px;}
+  .sb-nav{
+    position:absolute;left:0;right:0;top:100%;
+    background:#141a2b;border-bottom:1px solid rgba(255,255,255,.1);
+    flex-direction:column;align-items:stretch;
+    padding:10px 4% 16px;gap:2px;
+    display:none;box-shadow:0 20px 40px rgba(0,0,0,.35);
+  }
+  .sb-nav.open{display:flex;}
+  .sb-nav a{padding:12px 14px;font-size:15px;}
+  .sb-site-header{position:relative;}
+  .sb-header-main{position:relative;flex-wrap:nowrap;}
+  .sb-menu-toggle{display:grid;margin-left:auto;}
+  .sb-header-tools{order:3;}
+  .sb-search-input{width:150px;}
+  .sb-search-input:focus{width:180px;}
+  .sb-btn-upload{padding:8px 13px;font-size:12.5px;}
+  .sb-nav a.is-active::after{display:none;}
+  .sb-notice-text{white-space:normal;}
+}
+@media (max-width:720px){
+  .sb-header-main{gap:12px;}
+  .sb-brand-name{font-size:16.5px;}
+  .sb-brand-name small{font-size:9.5px;letter-spacing:1.5px;}
+  .sb-search-wrap{display:none;}
+  .sb-hero{padding:38px 0 46px;}
+  .sb-hero-stats{gap:10px;}
+  .sb-stat{padding:10px 16px;min-width:112px;}
+  .sb-stat-num{font-size:20px;}
+  .sb-section{padding:46px 0;}
+  .sb-section-head{margin-bottom:24px;}
+  .sb-focus-grid,.sb-stream-grid,.sb-topic-grid,.sb-creator-grid,.sb-review-grid,.sb-rank-wrap,.sb-news-grid{grid-template-columns:1fr;}
+  .sb-video-card.is-feature{grid-column:auto;}
+  .sb-inspire{padding:26px 22px;}
+  .sb-cta{padding:40px 20px;}
+  .sb-partners{grid-template-columns:repeat(2,1fr);}
+  .sb-footer-grid{grid-template-columns:1fr;gap:24px;}
+  .sb-to-top{right:16px;bottom:20px;width:42px;height:42px;}
+  .sb-hero-float{right:6px;bottom:-14px;padding:10px 14px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sb-sticky-wrap">
+  <div class="sb-notice-bar">
+    <div class="sb-container sb-notice-inner">
+      <span class="sb-notice-tag">官方发布</span>
+      <span class="sb-notice-text">新增「秘密基地导航发布」秋季企划第二季 · <b>《城市夜航地图》</b> 共 12 期已上线；创作者扶持计划第三批报名通道同步开启。</span>
+      <a class="sb-notice-link" href="#sb-news">查看更新日志 →</a>
+    </div>
+  </div>
+
+  <header class="sb-site-header">
+    <div class="sb-container sb-header-main">
+      <a class="sb-brand" href="#sb-top" aria-label="秘密基地导航发布官方网站首页">
+        <span class="sb-brand-logo">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M8 5.5l12 6.5-12 6.5z" fill="#20130a"/>
+          </svg>
+        </span>
+        <span class="sb-brand-name">秘密基地导航发布<small>SECRET BASE VIDEO</small></span>
+      </a>
+      <nav class="sb-nav" id="sbNav" aria-label="主导航">
+        <a href="#sb-top" class="is-active">首页</a>
+        <a href="#sb-focus">视频焦点</a>
+        <a href="#sb-topics">专题企划</a>
+        <a href="#sb-creators">创作者</a>
+        <a href="#sb-about">品牌故事</a>
+        <a href="#sb-news">企业动态</a>
+        <a href="#sb-faq">帮助中心</a>
+        <a href="#sb-contact">联系我们</a>
+      </nav>
+      <div class="sb-header-tools">
+        <div class="sb-search-wrap">
+          <input type="text" class="sb-search-input" id="sbSearchInput" placeholder="搜索视频 / 创作者 / 专题" aria-label="站内搜索">
+          <button class="sb-search-btn" id="sbSearchBtn" aria-label="执行搜索">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+          </button>
+          <div class="sb-search-tip" id="sbSearchTip"></div>
+        </div>
+        <button class="sb-btn-upload" id="sbUploadBtn">我要投稿</button>
+        <button class="sb-menu-toggle" id="sbMenuToggle" aria-label="展开导航菜单" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="sb-top">
+
+  <!-- ============ 首屏 ============ -->
+  <section class="sb-hero">
+    <div class="sb-container sb-hero-grid">
+      <div class="sb-hero-content">
+        <span class="sb-hero-badge"><span class="dot"></span>秘密基地导航发布 · 官方网站</span>
+        <h1>秘密基地<em>导航发布</em></h1>
+        <p class="sb-hero-slogan">为每一次真实的记录，找到它的秘密入口。</p>
+        <p class="sb-hero-desc">作为深耕影像内容领域的原创视频品牌，秘密基地导航发布官方网站持续运营一个以「真实、温暖、有力量」为核心的内容生态。我们连接创作者与企业，用专业的高清影像讲述城市、生活与人的故事，让每一份被认真记录的日常，都有值得被看见的位置。</p>
+        <div class="sb-hero-stats">
+          <div class="sb-stat">
+            <div class="sb-stat-num" data-count="12800">12800<small>+</small></div>
+            <div class="sb-stat-label">原创影像作品</div>
+          </div>
+          <div class="sb-stat">
+            <div class="sb-stat-num" data-count="640">640<small>位</small></div>
+            <div class="sb-stat-label">签约创作者</div>
+          </div>
+          <div class="sb-stat">
+            <div class="sb-stat-num" data-count="96">96<small>%</small></div>
+            <div class="sb-stat-label">用户口碑好评</div>
+          </div>
+        </div>
+        <div class="sb-hero-actions">
+          <a class="sb-btn sb-btn-primary" href="#sb-focus">浏览视频焦点</a>
+          <a class="sb-btn sb-btn-ghost" href="#sb-about">了解品牌故事</a>
+        </div>
+      </div>
+      <div class="sb-hero-visual">
+        <div class="sb-hero-cover">
+          <span class="sb-hero-cover-tag">本周主推 · 城市夜航地图 EP.08</span>
+          <svg viewBox="0 0 640 400" role="img" aria-label="夜晚城市高架与霓虹灯光的秘密基地导航发布主视觉">
+            <defs>
+              <linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#101a36"/><stop offset="0.55" stop-color="#1d2b57"/><stop offset="1" stop-color="#3b2b5a"/>
+              </linearGradient>
+              <linearGradient id="heroRoad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff8a4c"/><stop offset="1" stop-color="#ffd166"/>
+              </linearGradient>
+              <radialGradient id="heroGlow" cx="0.7" cy="0.28" r="0.5">
+                <stop offset="0" stop-color="#ffb37a" stop-opacity="0.85"/><stop offset="1" stop-color="#ff8a4c" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#heroSky)"/>
+            <circle cx="452" cy="112" r="120" fill="url(#heroGlow)"/>
+            <circle cx="452" cy="112" r="46" fill="#ffe0a3"/>
+            <circle cx="452" cy="112" r="34" fill="#fff3cf"/>
+            <g fill="#0b1226" opacity="0.9">
+              <rect x="40" y="188" width="70" height="212"/><rect x="120" y="150" width="54" height="250"/>
+              <rect x="184" y="220" width="66" height="180"/><rect x="258" y="168" width="48" height="232"/>
+              <rect x="318" y="236" width="72" height="164"/><rect x="400" y="196" width="56" height="204"/>
+              <rect x="466" y="252" width="80" height="148"/><rect x="556" y="176" width="52" height="224"/>
+            </g>
+            <g fill="#ffd166" opacity="0.85">
+              <rect x="52" y="204" width="9" height="12"/><rect x="70" y="204" width="9" height="12"/>
+              <rect x="88" y="226" width="9" height="12"/><rect x="132" y="170" width="8" height="11"/>
+              <rect x="148" y="192" width="8" height="11"/><rect x="198" y="236" width="9" height="12"/>
+              <rect x="220" y="236" width="9" height="12"/><rect x="272" y="188" width="8" height="11"/>
+              <rect x="290" y="210" width="8" height="11"/><rect x="334" y="254" width="9" height="12"/>
+              <rect x="414" y="214" width="8" height="11"/><rect x="432" y="214" width="8" height="11"/>
+              <rect x="484" y="270" width="9" height="12"/><rect x="566" y="196" width="8" height="11"/>
+            </g>
+            <path d="M0 400 L168 268 L300 300 L400 232 L520 268 L640 218 L640 400 Z" fill="url(#heroRoad)" opacity="0.22"/>
+            <path d="M120 400 C210 322 300 300 400 232 C470 190 540 196 640 218" stroke="url(#heroRoad)" stroke-width="4" fill="none" stroke-dasharray="14 12"/>
+            <g stroke="#ffffff" stroke-opacity="0.35" stroke-width="2">
+              <path d="M0 348 L120 400"/><path d="M340 400 L410 250"/>
+            </g>
+            <circle cx="410" cy="250" r="9" fill="#ff8a4c"/>
+            <circle cx="410" cy="250" r="18" fill="none" stroke="#ff8a4c" stroke-opacity="0.5" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="sb-hero-float">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.6-7 10-7 10z"/></svg>
+          </span>
+          <div><b>本周新增 326 条</b><span>真实影像 · 官方精选</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌解析长文 ============ -->
+  <section class="sb-section sb-about" id="sb-about">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">品牌定位与解析</span>
+          <h2>关于秘密基地导航发布：一个为真实记录而生的影像品牌</h2>
+          <p class="sb-section-sub">从一间小工作室到持续运营的原创视频内容生态，我们把「导航」与「发布」两件事，做成了一套有温度的影像语言。</p>
+        </div>
+      </div>
+      <div class="sb-about-grid">
+        <aside class="sb-about-aside">
+          <h3>品牌关键词</h3>
+          <p>秘密基地导航发布官方网站坚持以正版、高清、专业为底线，把创作者放在内容生态的中心位置，用匠心打磨每一帧画面。</p>
+          <div class="sb-about-keywords">
+            <span>原创影像</span><span>内容生态</span><span>创作者社区</span>
+            <span>城市探索</span><span>生活方式</span><span>品牌故事</span>
+            <span>高清正版</span><span>值得信赖</span>
+          </div>
+        </aside>
+        <div class="sb-about-body">
+          <h2>「秘密基地」不神秘，它只是把真实藏好了入口</h2>
+          <p>秘密基地导航发布，是一个以视频为核心媒介的原创内容品牌。我们把自己定义为「导航者」：在海量的影像信息里，帮观众找到那些真正值得停留的频道；同时我们也是「发布者」：为创作者提供一个稳定、专业、有长期主义气质的发布平台。很多第一次来到官方网站的朋友会问，为什么叫秘密基地？我们的回答是——每个人的生活里都有一些不轻易示人的角落，可能是深夜加班后拐进的那条小巷，可能是城市边缘一片被忽略的湿地，也可能是一段只有自己和镜头对话的十分钟。这些角落构成了一个人真正的生活底色，而秘密基地导航发布要做的，就是给这些角落一个被看见的正式入口。</p>
+          <h4>一、品牌缘起：从一次迷路开始的内容方向</h4>
+          <p>品牌创立之初，团队只有四个人、两台相机和一份手绘的城市地图。我们在拍摄一支城市纪录短片时迷了路，误打误撞走进一片废弃的铁路仓库区，那里有涂鸦、有流浪猫、有傍晚六点亮起来的一排旧路灯。那支短片后来成为品牌的第一部正式作品《被拆掉之前》。它没有宏大叙事，却收到了远超预期的反馈，很多观众留言说自己也有类似的「秘密基地」。这件事让团队意识到：真实的地方、真实的情绪、真实的记录，本身就具备强大的传播力。于是我们确定了品牌的主线——不做猎奇的内容，而是做可以被反复观看、被长期留存的高品质影像。</p>
+          <h4>二、内容方法论：导航、发布、再连接</h4>
+          <p>秘密基地导航发布把内容生产拆成三个环节。第一是「导航」：由编辑团队与城市观察员组成选品小组，从投稿中筛选具有真实性、细节感、在地性的作品，为它们匹配对应的专题位与推荐位。第二是「发布」：所有上线的视频都经过画质校验、版权确认与字幕标准化处理，确保观众看到的是正版、高清、专业的内容。第三是「再连接」：我们把评论、投稿、创作者档案打通，让观众能从一个视频直接走进创作者的其他作品，也能顺着话题找到同好。这套方法论让我们在一个并不轻松的内容行业里，保持了稳定的更新节奏与口碑积累。</p>
+          <h4>三、创作者生态：让匠心被看见，也让坚持有回报</h4>
+          <p>截至目前，秘密基地导航发布已签约及长期合作的创作者超过 640 位，覆盖城市探索、日常生活记录、手作、户外、音乐现场、影像实验等多个垂类。我们为创作者提供拍摄设备支持、后期指导、版权登记协助与流量分成，并定期举办主题挑战赛与线上投票活动。品牌每年举办两季「秘密基地扶持计划」，通过公开报名、评审与路演，为新人创作者提供首年拍摄基金。我们始终相信，内容生态的健康不在于头部有多高，而在于腰部与新人有没有成长的通道。这是官方网站持续投入最多、也最看重的一块业务。</p>
+          <h4>四、品质与责任：为什么我们坚持慢一点</h4>
+          <p>视频行业的节奏很快，但秘密基地导航发布选择在品质上慢下来。我们不为单条内容追求极端时长，而是要求每一支上线的作品都能经得起二次观看；我们不为流量牺牲版权底线，所有作品均完成版权声明与授权链路留存；我们在内容审核上设置了三道流程，确保画面、文字、配乐均符合规范。作为一个持续运营的品牌，社会责任不是一句口号，而是体现在每一次选题讨论、每一条推荐位分配、每一份创作者合同里。用户至上、值得信赖，这两句话被我们写进了内部工作手册的第一页。</p>
+          <h4>五、面向未来：做更有影响力的影像社区</h4>
+          <p>接下来的一年，秘密基地导航发布将持续拓展城市影像地图，把镜头从一线城市延伸到更多县域与乡镇，记录更丰富的在地文化。我们也将开放企业合作与品牌共创入口，为合作伙伴提供定制化的影像内容解决方案，让商业价值与内容品质不再对立。创新、多元、包容，是品牌下一阶段的关键词。我们希望秘密基地导航发布不只是一个看视频的地方，而是一个能够陪伴用户成长、承载真实情感、让人愿意反复回来的内容社区。感谢每一位在官方网站留下过足迹的观众与创作者，是你们让这个秘密基地，真正成为了一处公共的温暖之地。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 焦点视频 ============ -->
+  <section class="sb-section" id="sb-focus">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">视频焦点</span>
+          <h2>本周焦点 · 官方精选影像</h2>
+          <p class="sb-section-sub">由编辑团队从当周更新中挑选，兼顾故事深度与画面品质，适合安静地看完。</p>
+        </div>
+        <a class="sb-link-more" href="#sb-stream">全部视频 →</a>
+      </div>
+      <div class="sb-focus-grid">
+
+        <article class="sb-video-card is-feature">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 640 400" role="img" aria-label="城市夜航地图第八期的高架桥与车流灯光封面">
+              <defs>
+                <linearGradient id="fc1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#161f3d"/><stop offset="1" stop-color="#4a2f5e"/></linearGradient>
+              </defs>
+              <rect width="640" height="400" fill="url(#fc1)"/>
+              <g stroke="#ff8a4c" stroke-opacity="0.75" stroke-width="3" fill="none">
+                <path d="M-20 330 C140 250 260 300 380 236 C470 188 560 220 660 176"/>
+              </g>
+              <g stroke="#ffd166" stroke-opacity="0.45" stroke-width="2" fill="none">
+                <path d="M-20 372 C160 300 280 340 400 286 C500 240 580 264 660 226"/>
+              </g>
+              <g fill="#0b1226">
+                <rect x="40" y="200" width="58" height="200"/><rect x="112" y="160" width="44" height="240"/>
+                <rect x="468" y="186" width="60" height="214"/><rect x="540" y="222" width="48" height="178"/>
+              </g>
+              <g fill="#ffe0a3" opacity="0.9">
+                <rect x="52" y="216" width="8" height="11"/><rect x="70" y="216" width="8" height="11"/>
+                <rect x="122" y="178" width="7" height="10"/><rect x="480" y="202" width="8" height="11"/>
+                <rect x="498" y="202" width="8" height="11"/><rect x="552" y="238" width="7" height="10"/>
+              </g>
+              <circle cx="380" cy="236" r="7" fill="#fff"/>
+              <circle cx="380" cy="236" r="16" fill="none" stroke="#ff8a4c" stroke-opacity="0.6" stroke-width="2"/>
+              <rect x="0" y="0" width="640" height="400" fill="none"/>
+            </svg>
+            <span class="sb-video-badge">专题主推</span>
+            <span class="sb-video-dur">18:42</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">城市夜航地图 EP.08｜凌晨两点的高架桥，和那些还没回家的人</a>
+            <p class="sb-video-sum">我们跟着三位夜班工作者走过同一座高架桥：代驾师傅、便利店店员、桥下修车的老师傅。三条路线，三种时间感，却共享同一片城市灯光。</p>
+            <div class="sb-video-tags"><span>城市探索</span><span>人物访谈</span><span>深夜记录</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#4f8cff,#7aa8ff)">航</span>
+              <div class="sb-video-meta-info"><b>夜航小组</b><small>签约创作者 · 3.2 万关注</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sb-video-card">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 400 225" role="img" aria-label="旧书修复工作台与暖色灯光的影像封面">
+              <defs><linearGradient id="fc2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3e6d2"/><stop offset="1" stop-color="#d9b98c"/></linearGradient></defs>
+              <rect width="400" height="225" fill="url(#fc2)"/>
+              <rect x="46" y="66" width="150" height="106" rx="6" fill="#8d6a44"/>
+              <rect x="56" y="76" width="130" height="86" rx="4" fill="#f7efdf"/>
+              <g stroke="#c4a075" stroke-width="3"><path d="M70 96h100M70 114h100M70 132h72"/></g>
+              <circle cx="300" cy="82" r="34" fill="#ffcf8a" opacity="0.95"/>
+              <path d="M262 176c30-26 70-26 100 0" stroke="#7a5b39" stroke-width="6" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span class="sb-video-badge">手作</span>
+            <span class="sb-video-dur">12:05</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">一本旧书的三十天：修复师老陈的工作台</a>
+            <p class="sb-video-sum">从拆线、补纸到压平装订，镜头记录了一本书如何在双手之间重新活过来。</p>
+            <div class="sb-video-tags"><span>手作DIY</span><span>匠心</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#d98e4a,#f0b978)">陈</span>
+              <div class="sb-video-meta-info"><b>老陈的工作台</b><small>手作领域创作者</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sb-video-card">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 400 225" role="img" aria-label="清晨山谷雾气与松林徒步路线的影像封面">
+              <defs><linearGradient id="fc3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9c7d8"/><stop offset="1" stop-color="#4f7864"/></linearGradient></defs>
+              <rect width="400" height="225" fill="url(#fc3)"/>
+              <path d="M0 168 L86 108 L156 156 L226 96 L306 158 L400 118 L400 225 L0 225 Z" fill="#2f5445"/>
+              <path d="M0 196 L102 150 L186 188 L272 142 L356 186 L400 166 L400 225 L0 225 Z" fill="#1f3b31"/>
+              <g stroke="#eaf4ff" stroke-opacity="0.7" stroke-width="2" fill="none">
+                <path d="M60 120 q24 -18 48 0"/><path d="M250 108 q26 -20 52 0"/>
+              </g>
+              <path d="M120 225 C160 190 210 186 248 158" stroke="#ffd166" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+            </svg>
+            <span class="sb-video-badge">户外</span>
+            <span class="sb-video-dur">22:18</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">从山脚到垭口：一条无人推荐的三小时徒步路线</a>
+            <p class="sb-video-sum">避开热门步道，我们沿着护林员指的小路走了一段，遇到了雾、松鼠和一间废弃木屋。</p>
+            <div class="sb-video-tags"><span>户外活动</span><span>旅行见闻</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#3f8f6b,#6bbf95)">野</span>
+              <div class="sb-video-meta-info"><b>野径记录</b><small>户外领域创作者</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 视频流 ============ -->
+  <section class="sb-section sb-section-alt" id="sb-stream">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">热门视频流</span>
+          <h2>最近更新 · 正在被观看的内容</h2>
+          <p class="sb-section-sub">来自社区创作者的持续更新，涵盖日常记录、经验分享、教程干货与城市探索等方向。</p>
+        </div>
+        <a class="sb-link-more" href="#sb-topics">进入专题 →</a>
+      </div>
+      <div class="sb-stream-grid">
+
+        <article class="sb-video-card">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 400 225" role="img" aria-label="深夜厨房里煮一碗面的暖光影像封面">
+              <defs><linearGradient id="s1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2a20"/><stop offset="1" stop-color="#8c5a32"/></linearGradient></defs>
+              <rect width="400" height="225" fill="url(#s1)"/>
+              <circle cx="300" cy="62" r="30" fill="#ffd9a0" opacity="0.85"/>
+              <ellipse cx="196" cy="164" rx="86" ry="26" fill="#20242f"/>
+              <path d="M132 148 h128 l-14 42 h-100 z" fill="#f0e2cc"/>
+              <g stroke="#fff" stroke-opacity="0.45" stroke-width="3" fill="none" stroke-linecap="round">
+                <path d="M170 132 q8 -18 0 -34"/><path d="M200 128 q8 -20 0 -38"/><path d="M230 132 q8 -18 0 -34"/>
+              </g>
+            </svg>
+            <span class="sb-video-badge">日常记录</span>
+            <span class="sb-video-dur">09:24</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">加班回家煮一碗面，是我给自己留的仪式感</a>
+            <p class="sb-video-sum">把汤底熬好、葱花切细，十分钟的厨房时间，足够把一天的情绪放下来。</p>
+            <div class="sb-video-tags"><span>美食烹饪</span><span>治愈影像</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#e08a4a,#f2b47a)">锅</span>
+              <div class="sb-video-meta-info"><b>一口小锅</b><small>生活美食创作者</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sb-video-card">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 400 225" role="img" aria-label="拍摄器材与分镜脚本的创作幕后影像封面">
+              <defs><linearGradient id="s2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2540"/><stop offset="1" stop-color="#3b4a75"/></linearGradient></defs>
+              <rect width="400" height="225" fill="url(#s2)"/>
+              <rect x="52" y="66" width="120" height="84" rx="8" fill="#eef1f8"/>
+              <rect x="70" y="84" width="84" height="48" rx="4" fill="#9fb4dd"/>
+              <circle cx="266" cy="108" r="40" fill="none" stroke="#ff8a4c" stroke-width="6"/>
+              <circle cx="266" cy="108" r="16" fill="#ff8a4c"/>
+              <g stroke="#ffd166" stroke-width="4" stroke-linecap="round"><path d="M212 168h96"/><path d="M212 184h64"/></g>
+            </svg>
+            <span class="sb-video-badge">创作幕后</span>
+            <span class="sb-video-dur">15:36</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">一个镜头拍了 42 次：我们如何把三分钟短片磨出来</a>
+            <p class="sb-video-sum">从分镜表到现场调度，再到后期调色，完整复盘一支短片的工业化流程。</p>
+            <div class="sb-video-tags"><span>教程干货</span><span>剪辑思路</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#4f8cff,#86b1ff)">帧</span>
+              <div class="sb-video-meta-info"><b>帧间笔记</b><small>影像教学创作者</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sb-video-card">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 400 225" role="img" aria-label="老城区街角理发店的门前留影封面">
+              <defs><linearGradient id="s3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c9d8e8"/><stop offset="1" stop-color="#efe4d4"/></linearGradient></defs>
+              <rect width="400" height="225" fill="url(#s3)"/>
+              <rect x="60" y="70" width="150" height="130" fill="#a8543f"/>
+              <rect x="76" y="86" width="118" height="58" fill="#f2ece1"/>
+              <rect x="140" y="144" width="28" height="56" fill="#e5d6c3"/>
+              <g fill="#e5d6c3"><rect x="90" y="100" width="10" height="30"/><rect x="168" y="100" width="10" height="30"/></g>
+              <path d="M250 200 h100" stroke="#7a869e" stroke-width="4"/>
+              <circle cx="300" cy="164" r="26" fill="none" stroke="#4b5a76" stroke-width="5"/>
+              <path d="M290 164 h20" stroke="#4b5a76" stroke-width="4"/>
+            </svg>
+            <span class="sb-video-badge">在地文化</span>
+            <span class="sb-video-dur">11:52</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">开了三十七年的街角理发店，和他们不离不弃的老客人</a>
+            <p class="sb-video-sum">老式转椅、搪瓷缸和一面用了半世纪的镜子，一位师傅和一条街的日常。</p>
+            <div class="sb-video-tags"><span>城市探索</span><span>人物访谈</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#7a869e,#a9b4c8)">巷</span>
+              <div class="sb-video-meta-info"><b>巷口相机</b><small>纪实影像创作者</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sb-video-card">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 400 225" role="img" aria-label="桌面收纳前后对比的整理影像封面">
+              <defs><linearGradient id="s4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef1f8"/><stop offset="1" stop-color="#cdd8ec"/></linearGradient></defs>
+              <rect width="400" height="225" fill="url(#s4)"/>
+              <rect x="46" y="128" width="140" height="14" rx="4" fill="#8fa2c4"/>
+              <rect x="60" y="96" width="26" height="32" fill="#ffb08a"/>
+              <rect x="94" y="88" width="20" height="40" fill="#7fa8e8"/>
+              <rect x="122" y="104" width="34" height="24" fill="#ffd166"/>
+              <path d="M206 112 h48" stroke="#4b5a76" stroke-width="5" stroke-linecap="round"/>
+              <path d="M246 104 l16 8 -16 8z" fill="#4b5a76"/>
+              <rect x="278" y="76" width="82" height="100" rx="8" fill="#fff"/>
+              <g stroke="#c5d0e5" stroke-width="3"><path d="M292 100h54"/><path d="M292 120h54"/><path d="M292 140h36"/></g>
+            </svg>
+            <span class="sb-video-badge">实用技巧</span>
+            <span class="sb-video-dur">08:17</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">两平米书桌改造：把杂乱藏进三个抽屉里</a>
+            <p class="sb-video-sum">不买新家具，只用收纳盒和标签机，让桌面重新属于工作本身。</p>
+            <div class="sb-video-tags"><span>家居收纳</span><span>经验分享</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#5c7bb0,#8aa6d4)">收</span>
+              <div class="sb-video-meta-info"><b>小空间整理所</b><small>家居创作者</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sb-video-card">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 400 225" role="img" aria-label="深夜录音棚里乐队排练的音乐现场封面">
+              <defs><linearGradient id="s5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#231a35"/><stop offset="1" stop-color="#4b2f5e"/></linearGradient></defs>
+              <rect width="400" height="225" fill="url(#s5)"/>
+              <circle cx="130" cy="86" r="42" fill="#ff8a4c" opacity="0.35"/>
+              <g stroke="#ffd166" stroke-width="4" stroke-linecap="round">
+                <path d="M96 160 v-52"/><path d="M112 168 v-40"/><path d="M128 174 v-62"/><path d="M144 160 v-36"/>
+              </g>
+              <circle cx="290" cy="100" r="34" fill="none" stroke="#9f8ec9" stroke-width="5"/>
+              <circle cx="290" cy="100" r="12" fill="#c9b8f0"/>
+              <path d="M240 186 h120" stroke="#7a5c9b" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <span class="sb-video-badge">音乐现场</span>
+            <span class="sb-video-dur">26:40</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">地下排练室的一晚：五个人的乐队怎样磨一首歌</a>
+            <p class="sb-video-sum">没有观众，只有调音台和一盏旧灯，他们在凌晨把副歌改了第四遍。</p>
+            <div class="sb-video-tags"><span>音乐现场</span><span>创作幕后</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#7a5c9b,#a98fd0)">弦</span>
+              <div class="sb-video-meta-info"><b>弦外音</b><small>音乐记录创作者</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sb-video-card">
+          <div class="sb-video-cover">
+            <svg viewBox="0 0 400 225" role="img" aria-label="阳台植物与晨光的萌宠日常封面">
+              <defs><linearGradient id="s6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dff0e4"/><stop offset="1" stop-color="#a8d1b6"/></linearGradient></defs>
+              <rect width="400" height="225" fill="url(#s6)"/>
+              <circle cx="316" cy="56" r="34" fill="#fff4c8"/>
+              <rect x="48" y="150" width="150" height="14" rx="6" fill="#8a6a4a"/>
+              <rect x="70" y="112" width="34" height="38" fill="#c98a5c"/>
+              <g stroke="#3f8f6b" stroke-width="5" stroke-linecap="round" fill="none">
+                <path d="M87 112 v-32"/><path d="M87 94 q-16 -12 -24 -4"/><path d="M87 100 q16 -14 24 -6"/>
+              </g>
+              <ellipse cx="250" cy="164" rx="52" ry="30" fill="#f0e6d6"/>
+              <circle cx="212" cy="146" r="24" fill="#f0e6d6"/>
+              <path d="M196 130 l-14 -18 20 4z" fill="#f0e6d6"/>
+              <path d="M228 130 l14 -18 -20 4z" fill="#f0e6d6"/>
+              <circle cx="204" cy="146" r="3" fill="#4a4034"/><circle cx="220" cy="146" r="3" fill="#4a4034"/>
+            </svg>
+            <span class="sb-video-badge">萌宠日常</span>
+            <span class="sb-video-dur">06:48</span>
+            <span class="sb-video-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5l12 6.5-12 6.5z"/></svg></span></span>
+          </div>
+          <div class="sb-video-body">
+            <a class="sb-video-title" href="#sb-stream">猫咪第一次上阳台：一株猫薄荷引发的三小时</a>
+            <p class="sb-video-sum">从警惕到打滚，全程用固定机位记录，中途还来了一只不请自来的麻雀。</p>
+            <div class="sb-video-tags"><span>萌宠日常</span><span>日常记录</span></div>
+            <div class="sb-video-meta">
+              <span class="sb-avatar" style="background:linear-gradient(135deg,#5fae83,#8fd0aa)">橘</span>
+              <div class="sb-video-meta-info"><b>橘座观察日记</b><small>宠物影像创作者</small></div>
+              <div class="sb-video-ops">
+                <button class="sb-op-btn sb-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.6 12 20 12 20z"/></svg></button>
+                <button class="sb-op-btn sb-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                <button class="sb-op-btn sb-share-btn" aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 专题 ============ -->
+  <section class="sb-section" id="sb-topics">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">专题企划</span>
+          <h2>正在进行的品牌专题与共创企划</h2>
+          <p class="sb-section-sub">每个专题由编辑团队与创作者共同策划，围绕一个具体命题持续更新。</p>
+        </div>
+        <a class="sb-link-more" href="#sb-contact">合作共创 →</a>
+      </div>
+      <div class="sb-topic-grid">
+
+        <article class="sb-topic-card">
+          <svg viewBox="0 0 420 260" role="img" aria-label="城市夜航地图专题的夜色天际线封面" preserveAspectRatio="xMidYMid slice">
+            <rect width="420" height="260" fill="#121a33"/>
+            <circle cx="320" cy="66" r="38" fill="#ffd166" opacity="0.85"/>
+            <g fill="#0a1022"><rect x="30" y="140" width="52" height="120"/><rect x="94" y="104" width="44" height="156"/><rect x="150" y="158" width="60" height="102"/><rect x="222" y="120" width="42" height="140"/><rect x="276" y="168" width="66" height="92"/><rect x="352" y="130" width="44" height="130"/></g>
+            <g fill="#ffd166" opacity="0.85"><rect x="40" y="154" width="8" height="10"/><rect x="62" y="154" width="8" height="10"/><rect x="106" y="118" width="7" height="9"/><rect x="162" y="172" width="8" height="10"/><rect x="232" y="134" width="8" height="10"/><rect x="288" y="182" width="8" height="10"/><rect x="362" y="144" width="7" height="9"/></g>
+            <path d="M0 260 C110 208 200 230 300 186 C350 164 390 168 420 156" stroke="#ff8a4c" stroke-width="4" fill="none" stroke-dasharray="10 9"/>
+          </svg>
+          <div class="sb-topic-body">
+            <span class="sb-topic-status">持续更新中 · 已上线 8 期</span>
+            <h3>城市夜航地图</h3>
+            <p>聚焦夜间工作者的真实生活，用航拍与跟拍交替的方式，记录城市在深夜的另一副面孔。</p>
+          </div>
+        </article>
+
+        <article class="sb-topic-card">
+          <svg viewBox="0 0 420 260" role="img" aria-label="手作人的工作台专题的木色工具墙封面" preserveAspectRatio="xMidYMid slice">
+            <rect width="420" height="260" fill="#e6cfa8"/>
+            <rect x="40" y="40" width="340" height="180" rx="10" fill="#b98a55"/>
+            <g stroke="#7a5a34" stroke-width="6" stroke-linecap="round">
+              <path d="M90 80 v80"/><path d="M130 80 v60"/><path d="M170 80 v90"/><path d="M240 80 v70"/><path d="M300 80 v86"/>
+            </g>
+            <circle cx="90" cy="172" r="14" fill="#e6cfa8"/>
+            <circle cx="170" cy="182" r="14" fill="#e6cfa8"/>
+            <circle cx="300" cy="178" r="14" fill="#e6cfa8"/>
+            <path d="M210 220 h120" stroke="#7a5a34" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+          <div class="sb-topic-body">
+            <span class="sb-topic-status">更新至第 5 期</span>
+            <h3>手作人的工作台</h3>
+            <p>走进修书、制陶、木作、皮具等手艺人的工作间，记录一件器物从原料到成型的完整过程。</p>
+          </div>
+        </article>
+
+        <article class="sb-topic-card">
+          <svg viewBox="0 0 420 260" role="img" aria-label="小城慢镜头专题的河岸与老屋封面" preserveAspectRatio="xMidYMid slice">
+            <rect width="420" height="260" fill="#bcd6d8"/>
+            <path d="M0 170 C90 140 170 180 260 154 C330 134 380 150 420 138 L420 260 L0 260 Z" fill="#5f8f86"/>
+            <path d="M0 206 C110 182 200 214 300 190 C360 176 396 186 420 180 L420 260 L0 260 Z" fill="#3f6b63"/>
+            <g fill="#e8dcc6"><rect x="60" y="86" width="70" height="60"/><rect x="150" y="70" width="54" height="76"/><rect x="230" y="94" width="80" height="52"/></g>
+            <g fill="#8f6a4a"><path d="M52 86 l44 -30 44 30z"/><path d="M142 70 l34 -24 34 24z"/><path d="M222 94 l48 -30 48 30z"/></g>
+            <path d="M0 232 h420" stroke="#e8f4f4" stroke-width="3" stroke-dasharray="12 10"/>
+          </svg>
+          <div class="sb-topic-body">
+            <span class="sb-topic-status">官方企划 · 报名中</span>
+            <h3>小城慢镜头</h3>
+            <p>把镜头交给县域创作者，记录小城的清晨菜场、午后老街与傍晚河堤，构建更完整的在地影像档案。</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作者矩阵 ============ -->
+  <section class="sb-section sb-section-alt" id="sb-creators">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">创作者矩阵</span>
+          <h2>社区里的长期主义者</h2>
+          <p class="sb-section-sub">他们来自不同垂类，但都在用自己的节奏持续更新，构成了秘密基地导航发布的内容生态底座。</p>
+        </div>
+        <a class="sb-link-more" href="#sb-contact">申请入驻 →</a>
+      </div>
+      <div class="sb-creator-grid">
+
+        <article class="sb-creator-card">
+          <div class="sb-creator-top">
+            <span class="sb-creator-avatar" style="background:linear-gradient(135deg,#4f8cff,#7aa8ff)">夜</span>
+            <div>
+              <div class="sb-creator-name">夜航小组</div>
+              <div class="sb-creator-field">城市探索 · 纪实影像</div>
+            </div>
+          </div>
+          <p class="sb-creator-desc">四人小队，长期拍摄城市夜间生活与边缘空间。擅长长镜头与现场收音，坚持不摆拍。</p>
+          <div class="sb-creator-stats">
+            <div><b>86</b><span>作品</span></div>
+            <div><b>3.2万</b><span>关注</span></div>
+            <button class="sb-creator-more" data-creator="夜航小组|城市探索 · 纪实影像|86 部作品 · 3.2 万关注。四人小队，长期拍摄城市夜间生活与边缘空间，代表专题《城市夜航地图》。">档案</button>
+          </div>
+        </article>
+
+        <article class="sb-creator-card">
+          <div class="sb-creator-top">
+            <span class="sb-creator-avatar" style="background:linear-gradient(135deg,#d98e4a,#f0b978)">陈</span>
+            <div>
+              <div class="sb-creator-name">老陈的工作台</div>
+              <div class="sb-creator-field">手作 · 修复技艺</div>
+            </div>
+          </div>
+          <p class="sb-creator-desc">修复师，做了二十多年旧书与老物件修复。视频节奏很慢，但每一帧都在讲工序。</p>
+          <div class="sb-creator-stats">
+            <div><b>124</b><span>作品</span></div>
+            <div><b>5.6万</b><span>关注</span></div>
+            <button class="sb-creator-more" data-creator="老陈的工作台|手作 · 修复技艺|124 部作品 · 5.6 万关注。二十年旧书修复师，用慢节奏镜头记录器物重生的完整工序。">档案</button>
+          </div>
+        </article>
+
+        <article class="sb-creator-card">
+          <div class="sb-creator-top">
+            <span class="sb-creator-avatar" style="background:linear-gradient(135deg,#3f8f6b,#6bbf95)">野</span>
+            <div>
+              <div class="sb-creator-name">野径记录</div>
+              <div class="sb-creator-field">户外 · 徒步路线</div>
+            </div>
+          </div>
+          <p class="sb-creator-desc">专注于人少景美的非热门路线，所有轨迹都亲自走过一遍，强调安全与环保。</p>
+          <div class="sb-creator-stats">
+            <div><b>67</b><span>作品</span></div>
+            <div><b>2.1万</b><span>关注</span></div>
+            <button class="sb-creator-more" data-creator="野径记录|户外 · 徒步路线|67 部作品 · 2.1 万关注。专注非热门徒步路线实测，提供轨迹、补给点与安全提示。">档案</button>
+          </div>
+        </article>
+
+        <article class="sb-creator-card">
+          <div class="sb-creator-top">
+            <span class="sb-creator-avatar" style="background:linear-gradient(135deg,#7a5c9b,#a98fd0)">弦</span>
+            <div>
+              <div class="sb-creator-name">弦外音</div>
+              <div class="sb-creator-field">音乐现场 · 排练记录</div>
+            </div>
+          </div>
+          <p class="sb-creator-desc">跟拍独立乐队排练与小型演出，用现场声与特写保留音乐最粗糙也最动人的一面。</p>
+          <div class="sb-creator-stats">
+            <div><b>53</b><span>作品</span></div>
+            <div><b>1.8万</b><span>关注</span></div>
+            <button class="sb-creator-more" data-creator="弦外音|音乐现场 · 排练记录|53 部作品 · 1.8 万关注。跟拍独立乐队排练与小型现场，保留音乐最真实的现场质感。">档案</button>
+          </div>
+        </article>
+
+        <article class="sb-creator-card">
+          <div class="sb-creator-top">
+            <span class="sb-creator-avatar" style="background:linear-gradient(135deg,#5c7bb0,#8aa6d4)">收</span>
+            <div>
+              <div class="sb-creator-name">小空间整理所</div>
+              <div class="sb-creator-field">家居 · 收纳技巧</div>
+            </div>
+          </div>
+          <p class="sb-creator-desc">只做小户型，不推荐昂贵收纳神器，专注把现有空间用出更多可能性。</p>
+          <div class="sb-creator-stats">
+            <div><b>92</b><span>作品</span></div>
+            <div><b>4.0万</b><span>关注</span></div>
+            <button class="sb-creator-more" data-creator="小空间整理所|家居 · 收纳技巧|92 部作品 · 4.0 万关注。专注小户型整理方案，强调低成本、可复制的收纳改造。">档案</button>
+          </div>
+        </article>
+
+        <article class="sb-creator-card">
+          <div class="sb-creator-top">
+            <span class="sb-creator-avatar" style="background:linear-gradient(135deg,#e0605c,#f39a97)">帧</span>
+            <div>
+              <div class="sb-creator-name">帧间笔记</div>
+              <div class="sb-creator-field">教程 · 影像制作</div>
+            </div>
+          </div>
+          <p class="sb-creator-desc">从器材选择到剪辑节奏，把复杂流程拆成可执行的步骤，是新人创作者的常备参考。</p>
+          <div class="sb-creator-stats">
+            <div><b>148</b><span>作品</span></div>
+            <div><b>7.4万</b><span>关注</span></div>
+            <button class="sb-creator-more" data-creator="帧间笔记|教程 · 影像制作|148 部作品 · 7.4 万关注。拆解影像制作全流程，为新人创作者提供可落地的教程与模板。">档案</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 排行榜 ============ -->
+  <section class="sb-section" id="sb-rank">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">数据榜单</span>
+          <h2>本周榜单 · 热度、新人与口碑</h2>
+          <p class="sb-section-sub">基于播放完成率、互动质量与用户投票综合计算，每周更新一次。</p>
+        </div>
+      </div>
+      <div class="sb-rank-wrap">
+        <div class="sb-rank-col">
+          <h3>热度榜 <span class="tag">TOP 5</span></h3>
+          <div class="sb-rank-item"><span class="sb-rank-num">1</span><span class="sb-rank-title">城市夜航地图 EP.08｜凌晨两点的高架桥</span><span class="sb-rank-hot">9.8万</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">2</span><span class="sb-rank-title">开了三十七年的街角理发店</span><span class="sb-rank-hot">7.6万</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">3</span><span class="sb-rank-title">一个镜头拍了 42 次</span><span class="sb-rank-hot">6.4万</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">4</span><span class="sb-rank-title">地下排练室的一晚</span><span class="sb-rank-hot">5.2万</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">5</span><span class="sb-rank-title">两平米书桌改造</span><span class="sb-rank-hot">4.7万</span></div>
+        </div>
+        <div class="sb-rank-col">
+          <h3>新人榜 <span class="tag">NEW</span></h3>
+          <div class="sb-rank-item"><span class="sb-rank-num">1</span><span class="sb-rank-title">渡口日记 · 记录摆渡人的第五年</span><span class="sb-rank-hot">新晋</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">2</span><span class="sb-rank-title">半格胶片 · 一卷未冲洗的夏天</span><span class="sb-rank-hot">新晋</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">3</span><span class="sb-rank-title">楼下有猫 · 小区流浪猫档案</span><span class="sb-rank-hot">新晋</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">4</span><span class="sb-rank-title">木屑与茶 · 小院木工日常</span><span class="sb-rank-hot">新晋</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">5</span><span class="sb-rank-title">夜跑地图 · 城市十公里路线</span><span class="sb-rank-hot">新晋</span></div>
+        </div>
+        <div class="sb-rank-col">
+          <h3>口碑榜 <span class="tag">好评</span></h3>
+          <div class="sb-rank-item"><span class="sb-rank-num">1</span><span class="sb-rank-title">一本旧书的三十天</span><span class="sb-rank-hot">4.9分</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">2</span><span class="sb-rank-title">从山脚到垭口</span><span class="sb-rank-hot">4.8分</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">3</span><span class="sb-rank-title">加班回家煮一碗面</span><span class="sb-rank-hot">4.8分</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">4</span><span class="sb-rank-title">猫咪第一次上阳台</span><span class="sb-rank-hot">4.7分</span></div>
+          <div class="sb-rank-item"><span class="sb-rank-num">5</span><span class="sb-rank-title">巷口的三十年早餐摊</span><span class="sb-rank-hot">4.7分</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价 ============ -->
+  <section class="sb-section sb-section-alt" id="sb-reviews">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">用户评价</span>
+          <h2>他们这样描述在秘密基地导航发布的体验</h2>
+          <p class="sb-section-sub">来自观众与创作者的真实反馈，语气、长度与关注点各不相同。</p>
+        </div>
+      </div>
+      <div class="sb-review-grid">
+
+        <article class="sb-review-card">
+          <p class="sb-review-text">我是被一支讲旧书店的短片带进来的。这里的节奏跟别处不一样，没有那种强推着你往下刷的感觉，看完一支会想停一会儿。作为普通观众，我很珍惜这种被尊重的感觉。</p>
+          <div class="sb-review-user">
+            <span class="sb-avatar" style="background:linear-gradient(135deg,#4f8cff,#7aa8ff)">林</span>
+            <div><b>林间有风</b><span>观众 · 关注 2 年</span></div>
+            <span class="sb-stars">★★★★★</span>
+          </div>
+        </article>
+
+        <article class="sb-review-card">
+          <p class="sb-review-text">投稿流程比想象中顺，第二周就收到了编辑的逐条反馈，连字幕字号都给了建议。第一次有平台认真看完我的片子再回复，这点很难得。</p>
+          <div class="sb-review-user">
+            <span class="sb-avatar" style="background:linear-gradient(135deg,#3f8f6b,#6bbf95)">渡</span>
+            <div><b>渡口日记</b><span>新人创作者</span></div>
+            <span class="sb-stars">★★★★★</span>
+          </div>
+        </article>
+
+        <article class="sb-review-card">
+          <p class="sb-review-text">画质是真的在线，很多平台压缩之后细节全没了，这里的正片能看清雨丝的走向。对拍片子的人来说，这一点就值得留下来。</p>
+          <div class="sb-review-user">
+            <span class="sb-avatar" style="background:linear-gradient(135deg,#7a5c9b,#a98fd0)">半</span>
+            <div><b>半格胶片</b><span>影像创作者</span></div>
+            <span class="sb-stars">★★★★★</span>
+          </div>
+        </article>
+
+        <article class="sb-review-card">
+          <p class="sb-review-text">专题做得有想法。《小城慢镜头》把我老家那种小地方拍得很体面，不是猎奇也不是滤镜式的美，就是很真实。看完给家里打了个电话。</p>
+          <div class="sb-review-user">
+            <span class="sb-avatar" style="background:linear-gradient(135deg,#e08a4a,#f2b47a)">南</span>
+            <div><b>南边小城</b><span>观众</span></div>
+            <span class="sb-stars">★★★★☆</span>
+          </div>
+        </article>
+
+        <article class="sb-review-card">
+          <p class="sb-review-text">唯一想提的是希望移动端能加一个稍后看的入口，现在收藏夹里的内容有点多，找起来略费劲。其他都挺好，客服回复也快。</p>
+          <div class="sb-review-user">
+            <span class="sb-avatar" style="background:linear-gradient(135deg,#5c7bb0,#8aa6d4)">阿</span>
+            <div><b>阿哲不熬夜</b><span>观众 · 建议反馈</span></div>
+            <span class="sb-stars">★★★★☆</span>
+          </div>
+        </article>
+
+        <article class="sb-review-card">
+          <p class="sb-review-text">合作过一期品牌共创，从选题会到成片大概六周。他们对内容品质的把控比我们甲方还严格，最后成片在站内和外部渠道的反馈都不错，是值得长期信赖的伙伴。</p>
+          <div class="sb-review-user">
+            <span class="sb-avatar" style="background:linear-gradient(135deg,#7a869e,#a9b4c8)">合</span>
+            <div><b>合作方 · 品牌市场部</b><span>企业合作</span></div>
+            <span class="sb-stars">★★★★★</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作灵感 ============ -->
+  <section class="sb-section" id="sb-inspire">
+    <div class="sb-container">
+      <div class="sb-inspire">
+        <div>
+          <h3>创作灵感 · 从一个标签开始</h3>
+          <p>不知道怎么开始拍？选一个你感兴趣的方向，我们会给出对应的脚本思路、标题建议与剪辑节奏参考，帮助你把想法落成一支完整的短片。</p>
+          <div class="sb-inspire-tags" id="sbInspireTags">
+            <button data-inspire="idea1" class="is-on">城市探索</button>
+            <button data-inspire="idea2">日常记录</button>
+            <button data-inspire="idea3">手作工艺</button>
+            <button data-inspire="idea4">人物访谈</button>
+            <button data-inspire="idea5">户外路线</button>
+          </div>
+        </div>
+        <div class="sb-inspire-output" id="sbInspireOutput">
+          <h4>当前方向 · 城市探索</h4>
+          <p>找一个你每天经过但从未真正停留的角落，用一整天时间观察它的人流变化。</p>
+          <ul>
+            <li>脚本思路：以时间为轴，早中晚三个时段各拍一段 30 秒固定机位。</li>
+            <li>标题建议：《我在这条街站了八小时》</li>
+            <li>剪辑节奏：前 40 秒慢切，中段加快，结尾回到一个静止长镜头。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 企业动态 ============ -->
+  <section class="sb-section sb-section-alt" id="sb-news">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">企业动态</span>
+          <h2>官方发布 · 更新日志</h2>
+          <p class="sb-section-sub">包含内容更新、计划报名、产品调整与品牌合作信息。</p>
+        </div>
+      </div>
+      <div class="sb-news-grid">
+
+        <article class="sb-news-item">
+          <div class="sb-news-date"><b>18</b><span>11月</span></div>
+          <div>
+            <h4>「小城慢镜头」第二季报名通道开启</h4>
+            <p>面向县域与乡镇创作者开放 60 个名额，提供拍摄基金与后期支持，报名截止 12 月 15 日。</p>
+          </div>
+        </article>
+
+        <article class="sb-news-item">
+          <div class="sb-news-date"><b>12</b><span>11月</span></div>
+          <div>
+            <h4>城市夜航地图全 12 期完结</h4>
+            <p>专题总播放量突破 320 万，感谢夜航小组与所有受访者，合集页面已同步上线。</p>
+          </div>
+        </article>
+
+        <article class="sb-news-item">
+          <div class="sb-news-date"><b>06</b><span>11月</span></div>
+          <div>
+            <h4>画质标准升级公告</h4>
+            <p>官方发布内容统一提升至 4K 可选播放，创作者上传页同步更新码率建议与转码说明。</p>
+          </div>
+        </article>
+
+        <article class="sb-news-item">
+          <div class="sb-news-date"><b>29</b><span>10月</span></div>
+          <div>
+            <h4>与三家城市文化机构达成合作</h4>
+            <p>将在纪实地图、老建筑档案与口述历史方向展开内容共创，首批合作作品预计明年初上线。</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 合作品牌 ============ -->
+  <section class="sb-section" id="sb-partners">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">合作伙伴</span>
+          <h2>与我们一起做内容的企业与机构</h2>
+        </div>
+      </div>
+      <div class="sb-partners">
+        <div class="sb-partner">光影器具</div>
+        <div class="sb-partner">城市文化馆</div>
+        <div class="sb-partner">本地生活社</div>
+        <div class="sb-partner">纸间书店</div>
+        <div class="sb-partner">山野装备</div>
+        <div class="sb-partner">声场录音室</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="sb-section sb-section-alt" id="sb-faq">
+    <div class="sb-container">
+      <div class="sb-section-head">
+        <div>
+          <span class="sb-section-eyed">帮助中心</span>
+          <h2>常见问题解答</h2>
+          <p class="sb-section-sub">关于投稿、版权、合作与账号的常见疑问，点击展开查看。</p>
+        </div>
+      </div>
+      <div class="sb-faq-wrap">
+
+        <details class="sb-faq-item" open>
+          <summary>怎样向秘密基地导航发布投稿？</summary>
+          <div class="sb-faq-answer">点击页面右上角「我要投稿」，填写作品信息并上传成片或样片链接。编辑团队会在 7 个工作日内完成初审，通过后会通过站内通知与邮件同步反馈意见。</div>
+        </details>
+
+        <details class="sb-faq-item">
+          <summary>平台对作品时长和画质有要求吗？</summary>
+          <div class="sb-faq-answer">建议成片时长在 3 至 30 分钟之间，分辨率不低于 1080p，音频无明显底噪与削波。我们提供 4K 播放选项，但不强制要求上传 4K 版本。</div>
+        </details>
+
+        <details class="sb-faq-item">
+          <summary>投稿作品的版权归谁？</summary>
+          <div class="sb-faq-answer">著作权始终归创作者所有。官方网站仅获得在平台内展示与推荐的授权，涉及外部渠道分发会单独签署授权文件。我们坚持正版与授权链路留存的底线。</div>
+        </details>
+
+        <details class="sb-faq-item">
+          <summary>如何加入「秘密基地扶持计划」？</summary>
+          <div class="sb-faq-answer">每年两季公开招募，需提交一支代表性作品与一份拍摄计划。评审由编辑团队与外部创作者共同组成，入选者可获得首年拍摄基金与设备支持。</div>
+        </details>
+
+        <details class="sb-faq-item">
+          <summary>企业合作可以定制内容吗？</summary>
+          <div class="sb-faq-answer">可以。我们提供品牌纪录片、专题共创、线下放映等合作形式。请在「联系我们」区块留言，注明企业名称与合作方向，商务团队会尽快对接。</div>
+        </details>
+
+        <details class="sb-faq-item">
+          <summary>为什么我的作品没有被推荐到首页？</summary>
+          <div class="sb-faq-answer">推荐位综合考量内容真实性、画面品质、完成度与专题匹配度，并非单纯依播放量排序。未被推荐的作品仍会在创作者主页与站内搜索中展示，我们也鼓励持续更新。</div>
+        </details>
+
+        <details class="sb-faq-item">
+          <summary>账号信息与作品数据可以导出吗？</summary>
+          <div class="sb-faq-answer">创作者可在个人中心申请导出作品清单与数据概览，导出内容包含播放、完播、互动等基础指标，处理时间约为 3 个工作日。</div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 联系 CTA ============ -->
+  <section class="sb-section" id="sb-contact">
+    <div class="sb-container">
+      <div class="sb-cta">
+        <h2>把你的秘密基地，交给我们发布</h2>
+        <p>无论你是一位刚拿起相机的创作者，还是一个正在寻找影像表达方式的企业，秘密基地导航发布官方网站都欢迎你留下联系方式，我们一起把值得被记录的内容做出来。</p>
+        <form class="sb-cta-form" id="sbContactForm">
+          <input type="text" id="sbContactInput" placeholder="请输入邮箱或手机号" aria-label="联系方式">
+          <button type="submit" class="sb-btn sb-btn-primary">提交合作意向</button>
+        </form>
+        <p class="sb-cta-note">我们承诺不将你的联系方式用于其他用途，仅在合作沟通中使用。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="sb-footer">
+  <div class="sb-container">
+    <div class="sb-footer-grid">
+      <div>
+        <div class="sb-footer-brand">
+          <span class="sb-brand-logo">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5l12 6.5-12 6.5z" fill="#20130a"/></svg>
+          </span>
+          <b>秘密基地导航发布</b>
+        </div>
+        <p class="sb-footer-desc">秘密基地导航发布官方网站，专注原创影像内容生态与创作者社区建设，深耕城市记录、生活方式与在地文化垂直领域，持续为用户提供高品质正版内容。</p>
+        <p class="sb-footer-slogan">真实 · 温暖 · 有力量　|　持续运营中</p>
+      </div>
+      <div class="sb-footer-col">
+        <h5>内容导航</h5>
+        <a href="#sb-focus">视频焦点</a>
+        <a href="#sb-stream">热门视频流</a>
+        <a href="#sb-topics">专题企划</a>
+        <a href="#sb-rank">数据榜单</a>
+      </div>
+      <div class="sb-footer-col">
+        <h5>关于品牌</h5>
+        <a href="#sb-about">品牌故事</a>
+        <a href="#sb-creators">创作者矩阵</a>
+        <a href="#sb-news">企业动态</a>
+        <a href="#sb-partners">合作伙伴</a>
+      </div>
+      <div class="sb-footer-col">
+        <h5>支持与联系</h5>
+        <a href="#sb-faq">帮助中心</a>
+        <p>商务合作：brand@secretbase-video.cn</p>
+        <p>投稿咨询：creator@secretbase-video.cn</p>
+        <p>工作日 10:00 - 18:00</p>
+      </div>
+    </div>
+    <div class="sb-footer-bottom">
+      <span>© 2026 秘密基地导航发布（Secret Base Video）官方网站 · 版权所有 · 保留一切权利</span>
+      <span>原创内容生态 · 正版高清 · 值得信赖　|　内容由创作者授权发布</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 回到顶部 ============ -->
+<button class="sb-to-top" id="sbToTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ============ Toast ============ -->
+<div class="sb-toast" id="sbToast" role="status" aria-live="polite"></div>
+
+<!-- ============ 通用弹窗 ============ -->
+<div class="sb-modal-mask" id="sbModalMask">
+  <div class="sb-modal" role="dialog" aria-modal="true" aria-labelledby="sbModalTitle">
+    <div class="sb-modal-head">
+      <h3 id="sbModalTitle">提示</h3>
+      <button class="sb-modal-close" id="sbModalClose" aria-label="关闭弹窗">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div id="sbModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var namespace = "sb";
+
+  function $(selector, scope){
+    return (scope || document).querySelector(selector);
+  }
+  function $$(selector, scope){
+    return Array.prototype.slice.call((scope || document).querySelectorAll(selector));
+  }
+
+  /* ---------- Toast ---------- */
+  var toastEl = $("#sbToast");
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl){ return; }
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove("show");
+    }, 2200);
+  }
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var navEl = $("#sbNav");
+  var menuToggle = $("#sbMenuToggle");
+  if(menuToggle && navEl){
+    menuToggle.addEventListener("click", function(){
+      var isOpen = navEl.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+    $$("a", navEl).forEach(function(link){
+      link.addEventListener("click", function(){
+        navEl.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        $$("a", navEl).forEach(function(a){ a.classList.remove("is-active"); });
+        link.classList.add("is-active");
+      });
+    });
+  }
+
+  /* ---------- 搜索结果提示 ---------- */
+  var searchInput = $("#sbSearchInput");
+  var searchBtn = $("#sbSearchBtn");
+  var searchTip = $("#sbSearchTip");
+  var searchTimer = null;
+  var searchIndex = [
+    "城市夜航地图 EP.08 高架桥",
+    "一本旧书的三十天 修复师老陈",
+    "无人推荐的三小时徒步路线",
+    "加班回家煮一碗面",
+    "一个镜头拍了 42 次",
+    "街角理发店 三十七年",
+    "两平米书桌改造",
+    "地下排练室的一晚",
+    "猫咪第一次上阳台",
+    "小城慢镜头 专题",
+    "城市探索 创作者夜航小组",
+    "手作人的工作台 专题"
+  ];
+
+  function runSearch(keyword, target){
+    var kw = (keyword || "").trim();
+    if(!kw){
+      if(target === searchTip){
+        searchTip.innerHTML = "请输入关键词，例如 <strong>城市探索</strong> 或 <strong>手作</strong>。";
+        searchTip.classList.add("show");
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(function(){ searchTip.classList.remove("show"); }, 3200);
+      }else{
+        showToast("请输入关键词后再搜索");
+      }
+      return;
+    }
+    var matched = searchIndex.filter(function(item){
+      return item.indexOf(kw) > -1;
+    });
+    if(target === searchTip && searchTip){
+      if(matched.length){
+        searchTip.innerHTML = "找到 " + matched.length + " 条与「<strong>" + escapeHtml(kw) + "</strong>」相关的内容：<br>" + matched.slice(0,3).map(function(m){
+          return "· " + escapeHtml(m);
+        }).join("<br>");
+        searchTip.classList.add("show");
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(function(){ searchTip.classList.remove("show"); }, 5200);
+      }else{
+        searchTip.innerHTML = "暂未找到「<strong>" + escapeHtml(kw) + "</strong>」相关结果，可尝试 <strong>城市</strong>、<strong>手作</strong>、<strong>记录</strong> 等关键词。";
+        searchTip.classList.add("show");
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(function(){ searchTip.classList.remove("show"); }, 5200);
+      }
+    }else{
+      if(matched.length){
+        showToast("搜索「" + kw + "」，找到 " + matched.length + " 条相关内容");
+      }else{
+        showToast("暂未找到「" + kw + "」相关内容，换个关键词试试");
+      }
+    }
+  }
+
+  function escapeHtml(str){
+    return String(str).replace(/[&<>"']/g, function(ch){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch];
+    });
+  }
+
+  if(searchBtn){
+    searchBtn.addEventListener("click", function(){
+      runSearch(searchInput ? searchInput.value : "", searchTip);
+    });
+  }
+  if(searchInput){
+    searchInput.addEventListener("input", function(){
+      var val = searchInput.value.trim();
+      if(val.length >= 1){
+        runSearch(val, searchTip);
+      }else if(searchTip){
+        searchTip.classList.remove("show");
+      }
+    });
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){
+        e.preventDefault();
+        runSearch(searchInput.value, null);
+      }
+    });
+  }
+  document.addEventListener("click", function(e){
+    if(searchTip && !searchTip.contains(e.target) && searchInput && e.target !== searchInput && searchBtn && !searchBtn.contains(e.target)){
+      searchTip.classList.remove("show");
+    }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  $$(".sb-like-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var liked = btn.classList.toggle("is-liked");
+      var svg = btn.querySelector("svg");
+      if(svg){
+        svg.setAttribute("fill", liked ? "currentColor" : "none");
+      }
+      showToast(liked ? "已点赞，感谢支持原创内容" : "已取消点赞");
+    });
+  });
+
+  $$(".sb-save-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var saved = btn.classList.toggle("is-saved");
+      var svg = btn.querySelector("svg");
+      if(svg){
+        svg.setAttribute("fill", saved ? "currentColor" : "none");
+      }
+      showToast(saved ? "已加入收藏夹，可在个人中心查看" : "已从收藏夹移除");
+    });
+  });
+
+  /* ---------- 分享（复制链接） ---------- */
+  $$(".sb-share-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var card = btn.closest(".sb-video-card");
+      var titleEl = card ? card.querySelector(".sb-video-title") : null;
+      var title = titleEl ? titleEl.textContent.trim() : "秘密基地导航发布";
+      var linkText = "【秘密基地导航发布】" + title;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(linkText).then(function(){
+          showToast("内容标题已复制，可分享给朋友");
+        }).catch(function(){
+          showToast("复制失败，请手动分享");
+        });
+      }else{
+        showToast("分享内容：" + linkText.slice(0, 18) + "…");
+      }
+    });
+  });
+
+  /* ---------- 弹窗组件 ---------- */
+  var modalMask = $("#sbModalMask");
+  var modalTitle = $("#sbModalTitle");
+  var modalBody = $("#sbModalBody");
+  var modalClose = $("#sbModalClose");
+
+  function openModal(title, html){
+    if(!modalMask){ return; }
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modalMask.classList.add("show");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    if(!modalMask){ return; }
+    modalMask.classList.remove("show");
+    document.body.style.overflow = "";
+  }
+  if(modalClose){
+    modalClose.addEventListener("click", closeModal);
+  }
+  if(modalMask){
+    modalMask.addEventListener("click", function(e){
+      if(e.target === modalMask){ closeModal(); }
+    });
+  }
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){ closeModal(); }
+  });
+
+  /* ---------- 创作者档案弹窗 ---------- */
+  $$(".sb-creator-more").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var raw = btn.getAttribute("data-creator") || "";
+      var parts = raw.split("|");
+      var name = parts[0] || "创作者";
+      var field = parts[1] || "";
+      var detail = parts[2] || "";
+      var html = '<p><strong>擅长领域：</strong>' + escapeHtml(field) + '</p>' +
+                 '<p>' + escapeHtml(detail) + '</p>' +
+                 '<p>该创作者已通过平台实名与原创认证，作品由本人授权在官方网站发布。你可以在视频流中搜索其昵称查看更多内容。</p>' +
+                 '<button class="sb-modal-submit" id="sbCreatorFollow">关注这位创作者</button>';
+      openModal(name + " · 创作者档案", html);
+      var followBtn = $("#sbCreatorFollow");
+      if(followBtn){
+        followBtn.addEventListener("click", function(){
+          closeModal();
+          showToast("已关注 " + name + "，更新时会提醒你");
+        });
+      }
+    });
+  });
+
+  /* ---------- 投稿弹窗 ---------- */
+  var uploadBtn = $("#sbUploadBtn");
+  if(uploadBtn){
+    uploadBtn.addEventListener("click", function(){
+      var html = '<p>请填写作品基本信息，编辑团队将在 7 个工作日内完成初审并反馈意见。</p>' +
+        '<form class="sb-modal-form" id="sbUploadForm">' +
+        '<input type="text" placeholder="作品标题" required>' +
+        '<input type="text" placeholder="创作者昵称" required>' +
+        '<select><option>城市探索 / 纪实</option><option>日常记录 / 生活方式</option><option>手作 / 教程</option><option>户外 / 旅行</option><option>音乐 / 现场</option><option>其他方向</option></select>' +
+        '<textarea placeholder="一句话介绍你的作品（100 字以内）"></textarea>' +
+        '<button type="submit" class="sb-modal-submit">提交投稿信息</button>' +
+        '</form>';
+      openModal("投稿入口 · 秘密基地导航发布", html);
+      var form = $("#sbUploadForm");
+      if(form){
+        form.addEventListener("submit", function(e){
+          e.preventDefault();
+          closeModal();
+          showToast("投稿信息已提交，请留意站内通知与邮件");
+        });
+      }
+    });
+  }
+
+  /* ---------- 灵感切换 ---------- */
+  var inspireData = {
+    idea1:{
+      title:"当前方向 · 城市探索",
+      desc:"找一个你每天经过但从未真正停留的角落，用一整天时间观察它的人流变化。",
+      items:["脚本思路：以时间为轴，早中晚三个时段各拍一段 30 秒固定机位。","标题建议：《我在这条街站了八小时》","剪辑节奏：前 40 秒慢切，中段加快，结尾回到一个静止长镜头。"]
+    },
+    idea2:{
+      title:"当前方向 · 日常记录",
+      desc:"把镜头对准一件重复了很多年的事，比如每天早晨的第一杯水。",
+      items:["脚本思路：连续拍摄 7 天同一动作，用相同构图形成节奏感。","标题建议：《七天，同一杯水的早晨》","剪辑节奏：保持固定时长切点，让重复本身成为叙事。"]
+    },
+    idea3:{
+      title:"当前方向 · 手作工艺",
+      desc:"挑一件身边的小物，完整记录它被修好或重新做出来的过程。",
+      items:["脚本思路：以手部特写为主，穿插工具与材料的静物镜头。","标题建议：《把一把旧椅子拆开再装回去》","剪辑节奏：工序之间用短黑场分隔，突出动手的呼吸感。"]
+    },
+    idea4:{
+      title:"当前方向 · 人物访谈",
+      desc:"找一位在你生活半径里工作超过十年的人，聊一个具体的问题。",
+      items:["脚本思路：先拍环境空镜，再进入对话，保留沉默与停顿。","标题建议：《在这里做了二十年，我想问他为什么留下》","剪辑节奏：对话为主，环境音铺底，不添加煽情配乐。"]
+    },
+    idea5:{
+      title:"当前方向 · 户外路线",
+      desc:"选一条你熟悉的小路，把沿途的补给点、岔路与天气变化都记下来。",
+      items:["脚本思路：起点、中途、终点各设一个固定拍摄点，形成对照。","标题建议：《一条走了一百次的路线，这次我慢慢走》","剪辑节奏：按海拔或时间推进，配以轨迹图叠加。"]
+    }
+  };
+  var inspireTags = $("#sbInspireTags");
+  var inspireOutput = $("#sbInspireOutput");
+  if(inspireTags && inspireOutput){
+    inspireTags.addEventListener("click", function(e){
+      var btn = e.target.closest("button[data-inspire]");
+      if(!btn){ return; }
+      $$("button", inspireTags).forEach(function(b){ b.classList.remove("is-on"); });
+      btn.classList.add("is-on");
+      var data = inspireData[btn.getAttribute("data-inspire")];
+      if(!data){ return; }
+      inspireOutput.innerHTML = '<h4>' + data.title + '</h4><p>' + data.desc + '</p><ul>' +
+        data.items.map(function(it){ return "<li>" + it + "</li>"; }).join("") + '</ul>';
+    });
+  }
+
+  /* ---------- 联系表单 ---------- */
+  var contactForm = $("#sbContactForm");
+  var contactInput = $("#sbContactInput");
+  if(contactForm){
+    contactForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var val = contactInput ? contactInput.value.trim() : "";
+      if(!val){
+        showToast("请先填写邮箱或手机号");
+        return;
+      }
+      var isMail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+      var isPhone = /^1[3-9]\d{9}$/.test(val);
+      if(!isMail && !isPhone){
+        showToast("格式似乎不正确，请检查邮箱或手机号");
+        return;
+      }
+      contactInput.value = "";
+      showToast("合作意向已收到，我们会在 2 个工作日内联系你");
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = $("#sbToTop");
+  if(toTop){
+    window.addEventListener("scroll", function(){
+      if(window.scrollY > 520){
+        toTop.classList.add("show");
+      }else{
+        toTop.classList.remove("show");
+      }
+    }, { passive:true });
+    toTop.addEventListener("click", function(){
+      window.scrollTo({ top:0, behavior:"smooth" });
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counted = false;
+  function animateCounters(){
+    if(counted){ return; }
+    var nums = $$(".sb-stat-num[data-count]");
+    if(!nums.length){ return; }
+    counted = true;
+    nums.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-count"), 10) || 0;
+      var suffixEl = el.querySelector("small");
+      var suffix = suffixEl ? suffixEl.outerHTML : "";
+      var start = null;
+      var duration = 1200;
+      function step(ts){
+        if(!start){ start = ts; }
+        var progress = Math.min((ts - start) / duration, 1);
+        var value = Math.floor(progress * target);
+        el.innerHTML = value + suffix;
+        if(progress < 1){
+          requestAnimationFrame(step);
+        }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var statBox = $(".sb-hero-stats");
+    if(statBox){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            animateCounters();
+            io.disconnect();
+          }
+        });
+      }, { threshold:0.4 });
+      io.observe(statBox);
+    }
+  }else{
+    animateCounters();
+  }
+
+  /* ---------- 导航高亮跟随滚动 ---------- */
+  var sections = ["sb-top","sb-focus","sb-topics","sb-creators","sb-about","sb-news","sb-faq","sb-contact"];
+  var navLinks = $$("#sbNav a");
+  function syncActiveNav(){
+    var pos = window.scrollY + 160;
+    var currentId = "sb-top";
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el && el.offsetTop <= pos){
+        currentId = id;
+      }
+    });
+    navLinks.forEach(function(a){
+      var href = a.getAttribute("href") || "";
+      a.classList.toggle("is-active", href === "#" + currentId);
+    });
+  }
+  window.addEventListener("scroll", syncActiveNav, { passive:true });
+  syncActiveNav();
+
+})();
+</script>
+</body>
+              </html>
